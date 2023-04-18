@@ -1,11 +1,13 @@
 @import "bootstrap/scss/bootstrap";
 @import "variables";
+@import "header";
 
 html {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
@@ -41,48 +43,4 @@ h3 {
 
 #app {
 	background-color: #d5d5d5;
-}
-
-.text-scroll-container {
-	display: flex;
-	position: relative;
-	background-color: $main-red;
-	overflow: hidden;
-	padding: 0 1em;
-	align-items: center;
-	height: 2em;
-
-	.static-text {
-		position: absolute;
-		top: 0;
-		left: 0;
-		font-weight: 700;
-		color: #fbfbfb;
-		background-color: $main-red;
-		padding: 0 0.7em;
-		z-index: 1;
-		margin: 0.2em 0;
-		height: auto;
-	}
-
-	.scroling-news-wrappper {
-		display: inline-block;
-		white-space: nowrap;
-		animation: rightToLeft 12.5s linear infinite;
-	}
-
-	.news-text-item {
-		display: inline-block;
-		padding-right: 30px;
-		color: #fff;
-	}
-
-	@keyframes rightToLeft {
-		0% {
-			transform: translateX(100%);
-		}
-		100% {
-			transform: translateX(-100%);
-		}
-	}
 }
