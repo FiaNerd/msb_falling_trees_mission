@@ -136,25 +136,73 @@
 	}
 }
 
+// Small devices (landscape phones, 576px and up)
+@media only screen and (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+	.logo {
+		height: 4em;
+	}
+	.container {
+		margin-bottom: 1.5em;
+		width: 80%;
+	}
+	.navbar {
+		display: block;
+		.navbar-nav {
+			margin: 0 auto;
+			gap: 4em;
+			text-align: center;
+			background-color: $main-purple;
+			width: 100%;
+			justify-content: space-around;
+		}
+		.nav-link {
+			margin: 0 auto;
+			max-width: 70%;
+			color: $bg-light-grey;
+			&.active {
+				color: $bg-dark-grey;
+				background-color: $bg-light-grey;
+				height: 2em;
+				box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+				font-weight: 700;
+			}
+			&:hover {
+				color: $bg-dark-grey;
+				background-color: $bg-light-grey;
+				height: 2em;
+				box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+				font-weight: 700;
+			}
+		}
+	}
 	.search-icon {
 		display: none;
 	}
+	.btn-outline-success {
+		color: $bg-dark-grey;
+		border: 2px solid $main-purple;
+		width: 6em;
+		&:hover,
+		&:active {
+			background-color: $main-purple;
+			border: 2px solid $main-purple;
+			color: $bg-light-grey;
+		}
+	}
+	.search-container {
+		width: 28em;
+		height: 3em;
+	}
+}
 
-	// .navbar-brand {
-	// 	margin-right: 50px;
-	// }
-	// .navbar-nav {
-	// 	margin-left: auto;
-	// 	margin-right: -15px;
-	// }
-	// .nav-link {
-	// 	padding-right: 20px;
-	// 	padding-left: 20px;
-	// }
-	// .input-group {
-	// 	margin-top: 8px;
-	// 	margin-left: 50px;
-	// 	width: 250px;
-	// }
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
 }
