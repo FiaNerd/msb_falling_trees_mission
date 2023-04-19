@@ -34,38 +34,63 @@
 					</div>
 				</div>
 
-				<nav id="navbar">
-					<div class="logo">
-						<a href="#">
-							<img
-								class="logotype"
-								src="/images/msb_logo/msb_logotyp_svensk.png"
-								alt="MSB logotyp"
-							/>
+				<nav class="navbar navbar-expand-md">
+					<div class="container mx-2">
+					  <div class="d-flex align-items-center justify-content-between mb-3">
+						<a class="navbar-brand" href="#">
+						  <img class="logo" src="./images/msb_logo/msb_logotyp_svensk.png" alt="Logo" class="d-inline-block align-text-center" />
 						</a>
-					</div>
-					<div class="icon-search">
-						<i class="fas fa-search"></i>
-					</div>
-					<div class="menu">
-						<ul class="nav-items">
-							<li><a href="#" class="active">Anmälan</a></li>
-							<li><a href="#">Vårt arbete</a></li>
-							<li><a href="#">Välbesökta sidor</a></li>
-							<li><a href="#">Jobba hos oss</a></li>
-						</ul>
+						<button class="search-icon me-3" type="button" data-bs-toggle="modal" data-bs-target="#searchModal">
+						  <i class="fa fa-search"></i>
+						</button>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+						  <span class="navbar-toggler-icon line"></span>
+						  <span class="navbar-toggler-icon line"></span>
+						  <span class="navbar-toggler-text">Meny</span>
+						</button>
+					  </div>
 
-						<div class="hamburger-container">
-							<div class="hamburger"></div>
-							<p class="menu-text">meny</p>
+					  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="searchModalLabel">
+								Sök hos MSB
+							  </h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+							  <form class="d-flex">
+								<input class="form-control me-2" type="search" placeholder="Sök..." aria-label="Search" />
+								<button class="btn btn-outline-success" type="submit">Sök</button>
+							  </form>
+							</div>
+						  </div>
 						</div>
+					  </div>
+
+					  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+						<div class="navbar-nav ms-auto">
+						  <a class="nav-link active" aria-current="page" href="#">Hem</a>
+						  <a class="nav-link" href="#">Anmälan och information</a>
+						  <a class="nav-link" href="#">En annan länk</a>
+						  <a class="nav-link" href="#">En tredje länk</a>
+						</div>
+					  </div>
 					</div>
-				</nav>
+				  </nav>
+
+
+
+
 			</header>
 
 			<main></main>
 
 			<footer></footer>
+
+
+			</body>
 		</div>
 		<script type="module" src="/src/main.ts"></script>
 	</body>
