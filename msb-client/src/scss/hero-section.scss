@@ -1,5 +1,5 @@
 .row {
-	gap: 4em;
+	gap: 3em;
 }
 #hero-section {
 	// background: url('/hero-bg.jpg');
@@ -14,10 +14,13 @@
 
 	.hero-text-container {
 		text-align: center;
-		margin: 0.625rem;
+		margin-top: 3em;
 		background-color: rgba($main-red, 0.45);
+		h1 {
+			font-size: 1.5rem;
+		}
 		p {
-			font-size: 1.4em;
+			font-size: 1.2rem;
 		}
 	}
 	.btn-secondary {
@@ -28,5 +31,54 @@
 		border: none;
 		margin: auto 0;
 		font-size: 1.5rem;
+	}
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+	.row {
+		row-gap: 6em;
+	}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+	.row {
+		gap: 2em;
+	}
+
+	.hero-text-container {
+		margin-top: 2em;
+		text-align: center;
+		margin: 0.625rem;
+		padding: 0 4em;
+		background-color: rgba($main-red, 0.45);
+		line-height: 1.6rem;
+		h1 {
+			font-size: 2rem;
+		}
+		p {
+			font-size: 2.2rem;
+		}
+	}
+	.btn-secondary {
+		border: none;
+		margin: auto 0;
+		font-size: 1.8rem;
+		width: 40%;
+	}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+	.row {
+		gap: 3em;
+	}
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+	.row {
+		gap: 4em;
 	}
 }
