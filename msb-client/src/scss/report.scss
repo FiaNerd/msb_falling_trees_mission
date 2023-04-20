@@ -113,10 +113,16 @@
 	.btn-modal-instruction {
 		background-color: $main-red;
 		border: none;
-		width: 20em;
 		font-weight: 700;
 		font-size: 1.2rem;
 		width: 100%;
+
+		&:hover {
+			text-decoration: underline;
+			outline: 4px solid #db4b32;
+			color: $bg-dark-grey;
+			background-color: transparent;
+		}
 	}
 }
 
@@ -160,4 +166,32 @@
 	.btn-modal-close {
 		font-size: 1.3rem;
 	}
+}
+
+// Small devices (landscape phones, 576px and up)
+@media only screen and (min-width: 576px) {
+	.instruction-title-container {
+		.btn-modal-instruction {
+			width: 15em;
+		}
+	}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+	.info-wrapper {
+		grid-template-columns: 40% 60%;
+
+		.info-image {
+			height: 100%;
+		}
+	}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
 }
