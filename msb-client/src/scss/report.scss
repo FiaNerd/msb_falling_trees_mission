@@ -16,8 +16,8 @@
 
 #info-grid-container {
 	display: grid;
-	grid-template-rows: repeat(2);
-	gap: $between-sections-margin;
+	grid-template-rows: repeat(2, auto);
+	gap: 4em;
 }
 
 .info-title-container {
@@ -42,7 +42,6 @@
 }
 
 .info-wrapper {
-	display: grid;
 	grid-template-rows: repeat(2, auto);
 	padding: 0.5em;
 	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
@@ -87,20 +86,38 @@
 	}
 }
 
-// Instruction
-.instruction-title-container {
-	font-family: $heading-font;
-	background-color: $bg-light-grey;
-	border-top: 15px solid $main-red;
-	margin-bottom: 1.2rem;
+.info-section {
 	p {
 		font-family: $main-text-font;
 	}
 }
 
-.instruction {
+// Instruction
+.instruction-title-container {
+	flex-direction: column;
 	font-family: $heading-font;
-	padding: 0.3em 1.26em;
+	padding: 0.5em;
+	margin-bottom: 1.2rem;
+	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+
+	.text-wrapper {
+		border-top: 15px solid $main-red;
+		padding: 1em;
+		background-color: #e4e4e1;
+		padding: 1em;
+	}
+
+	p {
+		margin-bottom: 2em;
+	}
+	.btn-modal-instruction {
+		background-color: $main-red;
+		border: none;
+		width: 20em;
+		font-weight: 700;
+		font-size: 1.2rem;
+		width: 100%;
+	}
 }
 
 .article-text {
@@ -114,24 +131,20 @@
 	left: 50%;
 	width: 100%;
 	transform: translate(-50%, -50%);
-	z-index: 9999;
 	overflow-y: auto;
-	.modal-dialog {
-		margin: 0;
-	}
 
 	.modal-header {
 		position: sticky;
 		top: 0;
 		left: 0;
 		right: 0;
-		z-index: 1000;
+		z-index: 900;
 		background-color: #fff;
 		background-color: $bg-dark-grey;
 	}
 	.modal-body {
 		overflow-y: auto;
-		max-height: calc(100vh - 180px);
+		max-height: calc(100vh - 290px);
 	}
 	.strong-text {
 		font-weight: bold;
@@ -141,7 +154,7 @@
 		bottom: 0;
 		left: 0;
 		right: 0;
-		z-index: 1000;
+		z-index: 900;
 		background-color: #fff;
 	}
 	.btn-modal-close {

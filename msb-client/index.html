@@ -179,7 +179,7 @@
 
 				<div id="info-grid-container">
 					<section class="info-section">
-						<article class="info-wrapper">
+						<article class="info-wrapper d-grid">
 							<img
 								class="info-image"
 								src="/images/nature/fallen_tree_firetruck.jpg"
@@ -239,27 +239,33 @@
 					</section>
 
 					<section class="info-section">
-						<div class="instruction-title-container instruction">
-							<h2 class="instruction-title">
-								Läs instruktionerna noga innan du fyller i
-								formuläret
-							</h2>
-							<p>
-								<strong>Genom att följa dessa regler</strong>
-								kan du hjälpa till att säkerställa att
-								myndigheterna får all den information som de
-								behöver för att vidta lämpliga åtgärder mot
-								farliga träd eller grenar.
-							</p>
-							<!-- Button trigger modal -->
-							<div>
+						<div
+							class="instruction-title-container instruction d-flex"
+						>
+							<div class="text-wrapper">
+								<h2 class="instruction-title">
+									Läs instruktionerna noga innan du fyller i
+									formuläret
+								</h2>
+
+								<p>
+									<strong
+										>Genom att följa dessa regler</strong
+									>
+									kan du hjälpa till att säkerställa att
+									myndigheterna får all den information som de
+									behöver för att vidta lämpliga åtgärder mot
+									farliga träd eller grenar.
+								</p>
+
+								<!-- Button trigger modal -->
 								<button
 									type="button"
-									class="btn btn-primary"
+									class="btn-modal-instruction btn btn-primary float-end mb-2"
 									data-bs-toggle="modal"
 									data-bs-target="#instructionModal"
 								>
-									Launch demo modal
+									Till anmälan
 								</button>
 							</div>
 						</div>
@@ -267,7 +273,7 @@
 
 					<!-- Modal -->
 					<div
-						class="modal-instruction modal fade modal-dialog modal-dialog-centered modal-dialog-scrollable"
+						class="modal-instruction modal fade modal-dialog modal-dialog-centered modal-dialog-scrollable mx-auto my-auto"
 						id="instructionModal"
 						tabindex="-1"
 						aria-labelledby="exampleModalLabel"
