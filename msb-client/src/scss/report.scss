@@ -7,7 +7,7 @@
 	margin: 0 0.625em 2em 0.625em;
 }
 
-.title {
+.info-title {
 	font-family: $heading-font;
 	line-height: $line-height-title;
 	margin: 0 auto;
@@ -41,7 +41,7 @@
 	// margin-bottom: $between-sections-margin;
 }
 
-.info-wrapper {
+#info-wrapper {
 	grid-template-rows: repeat(2, auto);
 	padding: 0.5em;
 	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
@@ -97,7 +97,7 @@
 	flex-direction: column;
 	font-family: $heading-font;
 	padding: 0.5em;
-	margin-bottom: 1.2rem;
+	margin-bottom: 4rem;
 	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
 
 	.text-wrapper {
@@ -168,6 +168,69 @@
 	}
 }
 
+//FORM
+.form-report {
+	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+	padding: 0.6em;
+	background-color: $bg-light-grey;
+	margin-bottom: 3em;
+}
+
+.form-group {
+	margin-bottom: 0.7em;
+	width: 100%;
+}
+
+.form-control {
+	width: 100vw;
+}
+
+.form-adress {
+	margin-bottom: 2.6em;
+}
+.icon-form {
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.btn {
+	width: 100%;
+	background: $main-red;
+	color: #fff;
+	border: none;
+	&:hover {
+		background: #db4b32;
+		color: #fff;
+	}
+}
+.input-group-text {
+	height: 100%;
+}
+
+.title-legend {
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+	text-align: center;
+}
+#article-info-wrapper {
+	padding: 0.5em;
+	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+	max-width: 740px;
+	margin: 0 auto;
+
+	.handle-info-wrapper {
+		background-color: $bg-light-grey;
+		border-left: 15px solid $main-red;
+		padding: 1em;
+		// max-width: 740px;
+		margin: 0 auto;
+		flex-direction: column;
+		font-family: $heading-font;
+		padding: 0.5em;
+		box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+	}
+}
+
 // Small devices (landscape phones, 576px and up)
 @media only screen and (min-width: 576px) {
 	.instruction-title-container {
@@ -178,8 +241,8 @@
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-	.info-wrapper {
+@media only screen and (min-width: 768px) {
+	#info-wrapper {
 		grid-template-columns: 40% 60%;
 
 		.info-image {
@@ -189,9 +252,30 @@
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
+	// TODO: LÄGG IN EN BAKGRUNDS BILD BAKOM FOMREN!! NOG MED LINJER
+	#info-grid-container {
+		grid-template-columns: repeat(2, auto);
+		gap: 1.5em;
+		margin-bottom: 2.5em;
+	}
+	#info-wrapper {
+		grid-template-rows: repeat(2, auto);
+	}
+	.form-report {
+		max-width: 540px;
+		margin: 0 auto 3em auto;
+	}
+	.handle-info-wrapper {
+		background-color: $bg-light-grey;
+		border-left: 15px solid $main-red;
+		padding: 1em;
+		// max-width: 740px;
+		margin: 0 auto;
+		margin-bottom: 4em;
+	}
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
 }

@@ -153,7 +153,7 @@
 					<div class="container">
 						<div class="row p-4 justify-content-center">
 							<div
-								class="hero-text-container col-md-8 col-lg-8 d-flex flex-column justify-content-center mx-auto text-center py-3"
+								class="hero-text-container col-md-8 col-lg-8 d-flex flex-column justify-content-center mx-auto text-center pt-2"
 							>
 								<h1>Var en hjälte och anmäl farliga träd</h1>
 								<p>
@@ -175,12 +175,12 @@
 
 				<div class="main-boddy-container">
 					<div class="title-container">
-						<h2 class="title">Anmälan och information</h2>
+						<h2 class="info-title">Anmälan och information</h2>
 					</div>
 
 					<div id="info-grid-container">
 						<section class="info-section">
-							<article class="info-wrapper d-grid">
+							<article id="info-wrapper d-grid">
 								<img
 									class="info-image"
 									src="/images/nature/fallen_tree_firetruck.jpg"
@@ -273,7 +273,7 @@
 										data-bs-toggle="modal"
 										data-bs-target="#instructionModal"
 									>
-										Till anmälan
+										Läs mer
 									</button>
 								</div>
 							</div>
@@ -412,6 +412,330 @@
 							</div>
 						</div>
 					</div>
+
+					<div id="form-section" class="info-title-container">
+						<h2 class="info-title">
+							Orosamnälan - Fallande eller farliga träd
+						</h2>
+					</div>
+
+					<section class="container">
+						<form
+							class="form-report form-horizontal"
+							method="post"
+							id="contact_form"
+						>
+							<fieldset>
+								<!-- Form Name -->
+								<legend class="title-legend">
+									Kontaktperson
+								</legend>
+
+								<!-- Text input-->
+
+								<div class="form-group">
+									<label class="col-md-4 control-label"
+										>Förnamn</label
+									>
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text"
+												><span class="input-group-addon"
+													><i
+														class="icon-form fa-solid fa-user"
+													></i></span
+											></span>
+										</div>
+										<input
+											name="first_name"
+											placeholder="Förnamn"
+											class="form-control"
+											type="text"
+										/>
+									</div>
+								</div>
+
+								<!-- Text input-->
+
+								<div class="form-group">
+									<label class="col-md-4 control-label"
+										>Efternamn</label
+									>
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text"
+												><i
+													class="icon-form fa-solid fa-user"
+												></i
+											></span>
+										</div>
+										<input
+											name="last_name"
+											placeholder="Efternamn"
+											class="form-control"
+											type="text"
+										/>
+									</div>
+								</div>
+
+								<!-- Text input-->
+								<div class="form-group">
+									<label class="col-md-4 control-label"
+										>E-post</label
+									>
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text"
+												><i
+													class="icon-form fa-solid fa-envelope"
+												></i
+											></span>
+										</div>
+										<input
+											name="email"
+											placeholder=" E-post address"
+											class="form-control"
+											type="email"
+										/>
+									</div>
+								</div>
+
+								<!-- Text input-->
+								<div class="form-group">
+									<label class="col-md-4 control-label"
+										>Telefon nr</label
+									>
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text"
+												><i
+													class="icon-form fa-solid fa-phone"
+												></i
+											></span>
+										</div>
+										<input
+											name="phone"
+											placeholder="070-3456345"
+											class="form-control"
+											type="text"
+										/>
+									</div>
+								</div>
+
+								<!-- Text input-->
+
+								<div class="form-group form-adress">
+									<label class="col-md-4 control-label"
+										>Address</label
+									>
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text"
+												><i
+													class="icon-form fa-solid fa-address-book"
+												></i
+											></span>
+										</div>
+										<input
+											name="address"
+											placeholder="Address"
+											class="form-control"
+											type="text"
+										/>
+									</div>
+								</div>
+
+								<!-- Text input-->
+
+								<h3 class="title-legend">Platsbeskrivning</h3>
+
+								<div class="form-group">
+									<label class="col-md-4 control-label"
+										>Stad</label
+									>
+
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text"
+												><i
+													class="icon-form fa-solid fa-tree-city"
+												></i
+											></span>
+										</div>
+										<input
+											name="city"
+											placeholder="Stad"
+											class="form-control"
+											type="text"
+										/>
+									</div>
+								</div>
+
+								<!-- Text input-->
+								<div class="form-group">
+									<label class="col-md-4 control-label"
+										>Postnummer</label
+									>
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text"
+												><i
+													class="icon-form fa-solid fa-tree-city"
+												></i
+											></span>
+										</div>
+										<input
+											name="zip"
+											placeholder="Postnummer"
+											class="form-control"
+											type="text"
+										/>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text"
+												><i
+													class="icon-form fa-solid fa-square-check"
+												></i
+											></span>
+										</div>
+
+										<select
+											name="state"
+											class="form-control selectpicker"
+										>
+											<option value=" ">
+												Välj ur listan
+											</option>
+											<option>Farligt</option>
+											<option>Skadat</option>
+											<option>På vägen</option>
+										</select>
+									</div>
+								</div>
+
+								<!-- Text area -->
+								<div class="form-group">
+									<label class="col-md-4 control-label"
+										>Beskrivning av problemet</label
+									>
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text"
+												><i
+													class="icon-form fa-solid fa-road"
+												></i
+											></span>
+										</div>
+										<textarea
+											class="form-control"
+											name="comment"
+											placeholder="Beskrivning av problemet"
+										></textarea>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="col-md-4 control-label"
+										>Övrigt</label
+									>
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text"
+												><i
+													class="icon-form fa-solid fa-feather"
+												></i
+											></span>
+										</div>
+										<textarea
+											class="form-control"
+											name="comment"
+											placeholder="Beskrivning av problemet"
+										></textarea>
+									</div>
+								</div>
+								<!-- TODO: See if you can make a question mark, so when user press on in it would come info as a modal-->
+
+								<!-- Button -->
+								<div class="form-group">
+									<label
+										class="col-md-4 control-label"
+									></label>
+									<div class="col-md-4">
+										<button
+											type="submit"
+											class="btn btn-warning"
+										>
+											<span
+												class="glyphicon glyphicon-send"
+												><i
+													class="fa fa-envelope"
+												></i></span
+											>Skicka
+										</button>
+
+										<!-- TODO: DO your own envelope tahat is rotated at the beginning of the btn -->
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</section>
+
+					<section class="info-section">
+						<article id="article-info-wrapper">
+							<div class="handle-info-wrapper">
+								<h3>Hur vi hanterar din anmälan</h3>
+								<p class="text-fallen-trees">
+									När du rapporterar en oro för fallande träd
+									till myndigheterna kommer de att hantera din
+									anmälan på ett professionellt sätt för att
+									skydda allmänheten och fastigheter i
+									närheten.
+								</p>
+
+								<div class="expand-content" id="show-content-2">
+									<p>
+										Först och främst kommer myndigheterna
+										att samla in all nödvändig information
+										om det fallande trädet, såsom dess
+										placering, storlek och skick. De kommer
+										också att undersöka om det finns några
+										tidigare rapporterade incidenter som
+										involverar trädet. Efter att ha samlat
+										in all relevant information kommer
+										myndigheterna att bedöma risken som
+										trädet utgör för allmänheten och
+										fastigheter i närheten. Om trädet anses
+										utgöra en omedelbar fara kan det bli
+										nödvändigt att vidta åtgärder
+										omedelbart.
+										<br />
+										Beroende på situationen kan
+										myndigheterna vidta åtgärder för att
+										minimera risken, såsom att beskära,
+										fälla eller på annat sätt säkra trädet.
+										De kommer också att följa upp med
+										fastighetsägaren eller ansvarig för
+										trädet för att säkerställa att
+										åtgärderna vidtas.
+									</p>
+								</div>
+
+								<div class="expand-more">
+									<span
+										class="btn-expand-more"
+										data-hideText="Läs mindre"
+										data-showText="Läs mer"
+										data-target="show-content-2"
+										>Läs mer</span
+									>
+								</div>
+							</div>
+						</article>
+					</section>
 				</div>
 			</main>
 

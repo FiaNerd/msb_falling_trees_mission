@@ -1,5 +1,5 @@
 .row {
-	gap: 3em;
+	gap: 2.4em;
 }
 #hero-section {
 	width: 100%;
@@ -14,14 +14,7 @@
 
 	.hero-text-container {
 		text-align: center;
-		margin-top: 3em;
 		background-color: rgba($main-red, 0.45);
-		h1 {
-			font-size: 1.5rem;
-		}
-		p {
-			font-size: 1.2rem;
-		}
 	}
 	.btn-secondary {
 		display: flex;
@@ -30,7 +23,7 @@
 		background-color: $main-red;
 		border: none;
 		margin: auto 0;
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 	}
 }
 
@@ -43,22 +36,23 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-	.row {
-		gap: 2em;
-	}
+	// .row {
+	// 	gap: 2em;
+	// }
 
 	.hero-text-container {
 		margin-top: 2em;
 		text-align: center;
-		margin: 0.625rem;
+		margin: 1rem;
 		padding: 0 4em;
 		background-color: rgba($main-red, 0.45);
 		line-height: 1.6rem;
+		width: 100%;
 		h1 {
 			font-size: 2rem;
 		}
 		p {
-			font-size: 2.2rem;
+			font-size: 1.5rem;
 		}
 	}
 	.btn-secondary {
