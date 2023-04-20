@@ -1,0 +1,105 @@
+// Articles Our Work
+
+.society-work-container {
+	display: grid;
+	grid-template-rows: repeat(4, auto);
+	gap: 3em;
+
+	.wrapper-falling-tree {
+		margin-bottom: 4em;
+	}
+
+	.education-wrapper {
+		background-color: $bg-light-grey;
+		border-top: 15px solid $main-purple;
+		padding: 1em;
+		box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+	}
+
+	.our-work-wrapper {
+		background-color: $bg-light-grey;
+		border-left: 15px solid $main-purple;
+		padding: 1em;
+		box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+	}
+}
+
+.our-work-title-container {
+	font-family: $heading-font;
+	background-color: $main-purple;
+	color: #fff;
+	text-align: center;
+	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+	margin: 0 0.625em 2em 0.625em;
+}
+
+.arrow-container {
+	display: flex;
+	justify-content: end;
+}
+.icon-arrow {
+	margin-top: 0.6em;
+	font-size: 2.6em;
+	color: $main-purple;
+	cursor: pointer;
+}
+
+.society-card-section {
+	padding: 0.625em;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media only screen and (min-width: 576px) {
+	.instruction-title-container {
+		.btn-modal-instruction {
+			width: 15em;
+		}
+	}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+	#society-card-section {
+		grid-template-columns: 40% 60%;
+
+		.info-image {
+			object-fit: cover;
+			height: 100%;
+		}
+	}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+	// TODO: LÄGG IN EN BAKGRUNDS BILD BAKOM FOMREN!! NOG MED LINJER
+	.society-work-container {
+		grid-template-columns: repeat(2, auto);
+		gap: 1.5em;
+	}
+	#info-wrapper {
+		grid-template-rows: repeat(2, auto);
+	}
+	.form-report {
+		max-width: 540px;
+		margin: 0 auto 3em auto;
+	}
+	.handle-info-wrapper {
+		background-color: $bg-light-grey;
+		border-left: 15px solid $main-red;
+		padding: 1em;
+		// max-width: 740px;
+		margin: 0 auto;
+		margin-bottom: 4em;
+	}
+
+	#society-card-section-1,
+	#society-card-section-2,
+	#society-card-section-3,
+	#society-card-section-4 {
+		grid-template-rows: repeat(2, auto);
+	}
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {
+}

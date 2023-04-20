@@ -43,7 +43,7 @@
 
 #info-wrapper {
 	grid-template-rows: repeat(2, auto);
-	padding: 0.5em;
+	// padding: 0.5em;
 	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
 }
 
@@ -96,7 +96,6 @@
 .instruction-title-container {
 	flex-direction: column;
 	font-family: $heading-font;
-	padding: 0.5em;
 	margin-bottom: 4rem;
 	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
 
@@ -212,23 +211,17 @@
 	margin-bottom: 0.5rem;
 	text-align: center;
 }
-#article-info-wrapper {
-	padding: 0.5em;
-	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+
+.handle-info-wrapper {
+	background-color: $bg-light-grey;
+	border-left: 15px solid $main-red;
+	padding: 1em;
 	max-width: 740px;
 	margin: 0 auto;
-
-	.handle-info-wrapper {
-		background-color: $bg-light-grey;
-		border-left: 15px solid $main-red;
-		padding: 1em;
-		// max-width: 740px;
-		margin: 0 auto;
-		flex-direction: column;
-		font-family: $heading-font;
-		padding: 0.5em;
-		box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
-	}
+	flex-direction: column;
+	font-family: $heading-font;
+	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+	margin: 0 auto 4em auto;
 }
 
 // Small devices (landscape phones, 576px and up)
