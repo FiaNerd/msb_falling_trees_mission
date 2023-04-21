@@ -55,8 +55,9 @@
 	position: relative;
 	margin: 0 auto;
 	max-width: 600px;
-	margin: 0 0.625em;
+	margin: margin auto;
 	margin-bottom: 3em;
+	width: 95%;
 }
 
 .carousel-container,
@@ -250,7 +251,7 @@
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
 	#society-card-section {
-		grid-template-columns: 40% 60%;
+		grid-template-columns: 40% 50%;
 
 		.info-image {
 			object-fit: cover;
@@ -263,6 +264,7 @@
 @media (min-width: 992px) {
 	// TODO: LÄGG IN EN BAKGRUNDS BILD BAKOM FOMREN!! NOG MED LINJER
 	.society-work-container {
+		grid-template-columns: repeat(2, auto);
 		grid-template-columns: repeat(2, auto);
 		gap: 1.5em;
 	}
