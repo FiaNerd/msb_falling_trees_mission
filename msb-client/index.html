@@ -561,269 +561,274 @@
 					</div>
 
 					<section class="container">
-						<form
-							class="form-report form-horizontal"
-							method="post"
-							id="contact_form"
-						>
-							<fieldset>
-								<!-- Form Name -->
-								<legend class="title-legend">
-									Kontaktperson
-								</legend>
+						<div class="bg-form">
+							<form
+								class="form-report form-horizontal"
+								method="post"
+								id="contact_form"
+							>
+								<fieldset>
+									<!-- Form Name -->
+									<legend class="title-legend">
+										Kontaktperson
+									</legend>
 
-								<!-- Text input-->
+									<!-- Text input-->
 
-								<div class="form-group">
-									<label class="col-md-4 control-label"
-										>Förnamn</label
-									>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text"
-												><span class="input-group-addon"
+									<div class="form-group">
+										<label class="col-md-4 control-label"
+											>Förnamn</label
+										>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text"
+													><span
+														class="input-group-addon"
+														><i
+															class="icon-form fa-solid fa-user"
+														></i></span
+												></span>
+											</div>
+											<input
+												name="first_name"
+												placeholder="Förnamn"
+												class="form-control"
+												type="text"
+											/>
+										</div>
+									</div>
+
+									<!-- Text input-->
+
+									<div class="form-group">
+										<label class="col-md-4 control-label"
+											>Efternamn</label
+										>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text"
 													><i
 														class="icon-form fa-solid fa-user"
+													></i
+												></span>
+											</div>
+											<input
+												name="last_name"
+												placeholder="Efternamn"
+												class="form-control"
+												type="text"
+											/>
+										</div>
+									</div>
+
+									<!-- Text input-->
+									<div class="form-group">
+										<label class="col-md-4 control-label"
+											>E-post</label
+										>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text"
+													><i
+														class="icon-form fa-solid fa-envelope"
+													></i
+												></span>
+											</div>
+											<input
+												name="email"
+												placeholder=" E-post address"
+												class="form-control"
+												type="email"
+											/>
+										</div>
+									</div>
+
+									<!-- Text input-->
+									<div class="form-group">
+										<label class="col-md-4 control-label"
+											>Telefon nr</label
+										>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text"
+													><i
+														class="icon-form fa-solid fa-phone"
+													></i
+												></span>
+											</div>
+											<input
+												name="phone"
+												placeholder="070-3456345"
+												class="form-control"
+												type="text"
+											/>
+										</div>
+									</div>
+
+									<!-- Text input-->
+
+									<div class="form-group form-adress">
+										<label class="col-md-4 control-label"
+											>Address</label
+										>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text"
+													><i
+														class="icon-form fa-solid fa-address-book"
+													></i
+												></span>
+											</div>
+											<input
+												name="address"
+												placeholder="Address"
+												class="form-control"
+												type="text"
+											/>
+										</div>
+									</div>
+
+									<!-- Text input-->
+
+									<h2 class="title-legend">
+										Platsbeskrivning
+									</h2>
+
+									<div class="form-group">
+										<label class="col-md-4 control-label"
+											>Stad</label
+										>
+
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text"
+													><i
+														class="icon-form fa-solid fa-tree-city"
+													></i
+												></span>
+											</div>
+											<input
+												name="city"
+												placeholder="Stad"
+												class="form-control"
+												type="text"
+											/>
+										</div>
+									</div>
+
+									<!-- Text input-->
+									<div class="form-group">
+										<label class="col-md-4 control-label"
+											>Postnummer</label
+										>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text"
+													><i
+														class="icon-form fa-solid fa-tree-city"
+													></i
+												></span>
+											</div>
+											<input
+												name="zip"
+												placeholder="Postnummer"
+												class="form-control"
+												type="text"
+											/>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text"
+													><i
+														class="icon-form fa-solid fa-square-check"
+													></i
+												></span>
+											</div>
+
+											<select
+												name="state"
+												class="form-control selectpicker"
+											>
+												<option value=" ">
+													Välj ur listan
+												</option>
+												<option>Farligt</option>
+												<option>Skadat</option>
+												<option>På vägen</option>
+											</select>
+										</div>
+									</div>
+
+									<!-- Text area -->
+									<div class="form-group">
+										<label class="col-md-4 control-label"
+											>Beskrivning av problemet</label
+										>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text"
+													><i
+														class="icon-form fa-solid fa-road"
+													></i
+												></span>
+											</div>
+											<textarea
+												class="form-control"
+												name="comment"
+												placeholder="Beskrivning av problemet"
+											></textarea>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-4 control-label"
+											>Övrigt</label
+										>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text"
+													><i
+														class="icon-form fa-solid fa-feather"
+													></i
+												></span>
+											</div>
+											<textarea
+												class="form-control"
+												name="comment"
+												placeholder="Beskrivning av problemet"
+											></textarea>
+										</div>
+									</div>
+
+									<!-- TODO: See if you can make a question mark, so when user press on in it would come info as a modal-->
+
+									<!-- Button -->
+									<div class="form-group">
+										<label
+											class="col-md-4 control-label"
+										></label>
+										<div class="btn-block">
+											<button
+												type="submit"
+												class="btn btn-warning"
+											>
+												<span
+													class="glyphicon glyphicon-send"
+													><i
+														class="fa fa-envelope"
 													></i></span
-											></span>
+												>Skicka
+											</button>
+
+											<!-- TODO: DO your own envelope tahat is rotated at the beginning of the btn -->
 										</div>
-										<input
-											name="first_name"
-											placeholder="Förnamn"
-											class="form-control"
-											type="text"
-										/>
 									</div>
-								</div>
-
-								<!-- Text input-->
-
-								<div class="form-group">
-									<label class="col-md-4 control-label"
-										>Efternamn</label
-									>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text"
-												><i
-													class="icon-form fa-solid fa-user"
-												></i
-											></span>
-										</div>
-										<input
-											name="last_name"
-											placeholder="Efternamn"
-											class="form-control"
-											type="text"
-										/>
-									</div>
-								</div>
-
-								<!-- Text input-->
-								<div class="form-group">
-									<label class="col-md-4 control-label"
-										>E-post</label
-									>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text"
-												><i
-													class="icon-form fa-solid fa-envelope"
-												></i
-											></span>
-										</div>
-										<input
-											name="email"
-											placeholder=" E-post address"
-											class="form-control"
-											type="email"
-										/>
-									</div>
-								</div>
-
-								<!-- Text input-->
-								<div class="form-group">
-									<label class="col-md-4 control-label"
-										>Telefon nr</label
-									>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text"
-												><i
-													class="icon-form fa-solid fa-phone"
-												></i
-											></span>
-										</div>
-										<input
-											name="phone"
-											placeholder="070-3456345"
-											class="form-control"
-											type="text"
-										/>
-									</div>
-								</div>
-
-								<!-- Text input-->
-
-								<div class="form-group form-adress">
-									<label class="col-md-4 control-label"
-										>Address</label
-									>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text"
-												><i
-													class="icon-form fa-solid fa-address-book"
-												></i
-											></span>
-										</div>
-										<input
-											name="address"
-											placeholder="Address"
-											class="form-control"
-											type="text"
-										/>
-									</div>
-								</div>
-
-								<!-- Text input-->
-
-								<h2 class="title-legend">Platsbeskrivning</h2>
-
-								<div class="form-group">
-									<label class="col-md-4 control-label"
-										>Stad</label
-									>
-
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text"
-												><i
-													class="icon-form fa-solid fa-tree-city"
-												></i
-											></span>
-										</div>
-										<input
-											name="city"
-											placeholder="Stad"
-											class="form-control"
-											type="text"
-										/>
-									</div>
-								</div>
-
-								<!-- Text input-->
-								<div class="form-group">
-									<label class="col-md-4 control-label"
-										>Postnummer</label
-									>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text"
-												><i
-													class="icon-form fa-solid fa-tree-city"
-												></i
-											></span>
-										</div>
-										<input
-											name="zip"
-											placeholder="Postnummer"
-											class="form-control"
-											type="text"
-										/>
-									</div>
-								</div>
-
-								<div class="form-group">
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text"
-												><i
-													class="icon-form fa-solid fa-square-check"
-												></i
-											></span>
-										</div>
-
-										<select
-											name="state"
-											class="form-control selectpicker"
-										>
-											<option value=" ">
-												Välj ur listan
-											</option>
-											<option>Farligt</option>
-											<option>Skadat</option>
-											<option>På vägen</option>
-										</select>
-									</div>
-								</div>
-
-								<!-- Text area -->
-								<div class="form-group">
-									<label class="col-md-4 control-label"
-										>Beskrivning av problemet</label
-									>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text"
-												><i
-													class="icon-form fa-solid fa-road"
-												></i
-											></span>
-										</div>
-										<textarea
-											class="form-control"
-											name="comment"
-											placeholder="Beskrivning av problemet"
-										></textarea>
-									</div>
-								</div>
-
-								<div class="form-group">
-									<label class="col-md-4 control-label"
-										>Övrigt</label
-									>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text"
-												><i
-													class="icon-form fa-solid fa-feather"
-												></i
-											></span>
-										</div>
-										<textarea
-											class="form-control"
-											name="comment"
-											placeholder="Beskrivning av problemet"
-										></textarea>
-									</div>
-								</div>
-
-								<!-- TODO: See if you can make a question mark, so when user press on in it would come info as a modal-->
-
-								<!-- Button -->
-								<div class="form-group">
-									<label
-										class="col-md-4 control-label"
-									></label>
-									<div class="btn-block">
-										<button
-											type="submit"
-											class="btn btn-warning"
-										>
-											<span
-												class="glyphicon glyphicon-send"
-												><i
-													class="fa fa-envelope"
-												></i></span
-											>Skicka
-										</button>
-
-										<!-- TODO: DO your own envelope tahat is rotated at the beginning of the btn -->
-									</div>
-								</div>
-							</fieldset>
-						</form>
+								</fieldset>
+							</form>
+						</div>
 					</section>
 
 					<section class="info-section">

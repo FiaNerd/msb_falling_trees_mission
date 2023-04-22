@@ -112,10 +112,7 @@
 
 .modal-instruction {
 	position: absolute;
-	// top: 50%;
-	// left: 50%;
 	width: 100%;
-	// transform: translate(-50%, -50%);
 	overflow-y: auto;
 
 	#instruction-header {
@@ -212,7 +209,13 @@
 
 // Large devices (desktops, 992px and up)
 @media only screen and (min-width: 992px) {
-	// TODO: LÄGG IN EN BAKGRUNDS BILD BAKOM FOMREN!! NOG MED LINJER
+	.bg-form {
+		background-image: url(images/artwork/bg_form.svg);
+		background-size: cover;
+		// width: 100%;
+		background-position: center center;
+	}
+
 	#info-grid-container {
 		grid-template-columns: 60% 37.4%;
 		gap: 1.5em;
@@ -223,8 +226,9 @@
 		grid-template-rows: repeat(2, auto);
 	}
 	.form-report {
-		max-width: 540px;
+		max-width: 510px;
 		margin: 0 auto 3em auto;
+		padding: 2em;
 	}
 	.handle-info-wrapper {
 		background-color: $bg-light-grey;
