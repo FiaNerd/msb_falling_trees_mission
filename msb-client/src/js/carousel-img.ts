@@ -3,7 +3,7 @@ const prev = document.querySelector('.prev')
 const next = document.querySelector('.next')
 const imgs = document.querySelectorAll('.carousel-img') as NodeListOf<HTMLImageElement>
 const dots = document.querySelectorAll('.dot') as NodeListOf<HTMLSpanElement>
-const slides = document.querySelectorAll('.carousel-slide') as NodeListOf<HTMLSpanElement>
+const slides = document.querySelectorAll('.carousel-ovaraly') as NodeListOf<HTMLSpanElement>
 const totalImgs = imgs.length;
 let imgPosition = 0;
 
