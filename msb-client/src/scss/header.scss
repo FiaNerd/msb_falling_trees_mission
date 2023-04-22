@@ -89,7 +89,7 @@
 }
 
 .modal-header {
-	background-color: $bg-dark-grey;
+	background-color: $main-purple;
 	.modal-title {
 		color: #fbfbfb;
 	}
@@ -99,18 +99,19 @@
 }
 .modal-body {
 	text-align: center;
-
 	input[type="search"] {
 		width: 80%;
 	}
-	.btn-outline-success {
-		color: #fbfbfb;
-		background-color: $bg-dark-grey;
-		border: none;
 
+	.btn-search-mobile {
+		color: #fbfbfb;
+		background-color: $main-purple;
+		border: none;
+		width: 4em;
+		border-radius: 0.5em;
 		&:hover {
 			background-color: transparent;
-			border: 2px solid $bg-dark-grey;
+			border: 2px solid $main-purple;
 			color: $bg-dark-grey;
 		}
 	}
