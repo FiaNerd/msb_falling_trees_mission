@@ -32,18 +32,26 @@ body {
 	width: 100%;
 	min-height: 100vh;
 	margin: 0 auto;
-	// max-width: 1280px;
 	color: #333333;
 	background-color: $bg-light-grey;
 }
 
-h1,
-h2,
-h3 {
+h2 {
 	font-family: $heading-font;
 	line-height: $line-height-title;
 	font-size: $heading-size;
 	font-weight: 600;
+}
+.sub-text {
+	font-family: $heading-font;
+	font-style: 1.125;
+	line-height: 1.875;
+}
+
+p {
+	font-family: $main-text-font;
+	line-height: $line-height-text;
+	margin-bottom: 2rem;
 }
 
 #app {

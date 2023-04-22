@@ -1,5 +1,4 @@
 // Articles Our Work
-
 .society-work-container {
 	display: grid;
 	grid-template-rows: repeat(4, auto);
@@ -31,6 +30,11 @@
 	text-align: center;
 	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
 	margin: 0 0.625em 2em 0.625em;
+
+	.intervju-subtitle {
+		padding-bottom: 1em;
+		font-size: 1.3rem;
+	}
 }
 
 .arrow-container {

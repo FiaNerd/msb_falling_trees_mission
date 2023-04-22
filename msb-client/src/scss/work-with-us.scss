@@ -118,7 +118,6 @@
 }
 
 //WORK
-
 .work-container {
 	position: relative;
 	max-width: 588px;
@@ -130,13 +129,18 @@
 	margin-bottom: 3em;
 }
 
-.work-article-container {
+.work-title-container {
 	font-family: $heading-font;
 	background-color: $main-grey;
 	color: #fff;
 	text-align: center;
 	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
 	margin-bottom: 2em;
+
+	.work-subtitle {
+		padding-bottom: 1em;
+		font-size: 1.3rem;
+	}
 }
 
 .work-with-us-wrapper {

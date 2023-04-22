@@ -38,7 +38,6 @@
 
 .info-section {
 	padding: 0 0.625em;
-	// margin-bottom: $between-sections-margin;
 }
 
 #info-wrapper {
@@ -86,16 +85,9 @@
 	}
 }
 
-.info-section {
-	p {
-		font-family: $main-text-font;
-	}
-}
-
 // Instruction
 .instruction-title-container {
 	flex-direction: column;
-	font-family: $heading-font;
 	margin-bottom: 4rem;
 	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
 
@@ -103,11 +95,6 @@
 		border-top: 15px solid $main-red;
 		padding: 1em;
 		background-color: #e4e4e1;
-		padding: 1em;
-	}
-
-	p {
-		margin-bottom: 2em;
 	}
 	.btn-modal-instruction {
 		background-color: $main-red;
