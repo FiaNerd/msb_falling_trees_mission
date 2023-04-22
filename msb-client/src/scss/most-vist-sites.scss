@@ -10,12 +10,12 @@
 .visit-wrapper {
 	display: grid;
 	grid-template-rows: repeat(2, auto);
+	gap: 1.5em;
+	margin-bottom: 4em;
 
 	.news-One-wrapper {
 		background-color: $bg-light-grey;
 		border-left: 15px solid $main-grey;
-		padding: 1em;
-		margin-bottom: 3em;
 		padding: 1em;
 		box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
 	}

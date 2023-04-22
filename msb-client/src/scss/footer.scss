@@ -4,13 +4,12 @@
 }
 
 .links-container {
-	display: grid;
-	grid-template-rows: repeat(4, auto);
 	background-color: $main-purple;
 	gap: 1.5em;
-	padding: 0.625rem;
+	padding: 2em;
 	flex-wrap: wrap;
 	line-height: 2.2rem;
+	justify-content: space-between;
 }
 
 footer ul {
@@ -18,49 +17,57 @@ footer ul {
 	padding: 0;
 }
 
-footer section a {
+footer ul a {
 	color: #fff;
 	text-decoration: none;
 }
 
-footer section a:hover {
+footer ul a:hover {
 	text-decoration: underline;
+	color: #fff;
 }
 
 .footer-title {
 	color: #fff;
 	font-size: 1.125rem;
 	font-weight: 900;
-}
-
-.msb-logo-footer {
-	width: 9em;
-	margin-top: 2em;
+	padding: 0;
 }
 
 .contact-container {
-	display: grid;
 	position: relative;
-	grid-template-rows: repeat(4, auto);
 	background-color: $main-grey;
 	gap: 1.5em;
-	padding: 0.625rem 0.625rem 3rem 0.625rem;
+	padding: 0.625em 2em 3em 2em;
 	flex-wrap: wrap;
-}
-
-.contact-msb {
-	color: #fff;
-	ul {
-		line-height: 2.2em;
+	justify-content: space-between;
+	.msb-logo-footer {
+		width: 12em;
+		margin-top: 2em;
 	}
-}
 
-.sub-title-footer {
-	font-size: 0.875rem;
-}
+	.contact-msb {
+		color: #fff;
+		ul {
+			line-height: 2.2em;
+		}
+		a {
+			color: #fff;
+			text-decoration: none;
+		}
+		a:hover {
+			color: #fff;
+			text-decoration: underline;
+		}
+	}
 
-.sub-text-footer {
-	margin-bottom: 1.3em;
+	.sub-title-footer {
+		font-size: 0.875rem;
+	}
+
+	.sub-text-footer {
+		margin-bottom: 1.3em;
+	}
 }
 
 .bottom-footer-container {
@@ -111,13 +118,11 @@ footer section a:hover {
 	.links-container {
 		display: grid;
 		grid-template-columns: repeat(4, auto);
-		justify-content: space-around;
 	}
 	.contact-container {
 		display: grid;
 		position: relative;
 		grid-template-columns: repeat(4, auto);
-		justify-content: space-around;
 	}
 	.contact-msb {
 		margin-top: 3em;
