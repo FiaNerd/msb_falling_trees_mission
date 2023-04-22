@@ -228,9 +228,10 @@
 @media only screen and (min-width: 992px) {
 	// TODO: LÄGG IN EN BAKGRUNDS BILD BAKOM FOMREN!! NOG MED LINJER
 	#info-grid-container {
-		grid-template-columns: repeat(2, auto);
+		grid-template-columns: 60% 37.4%;
 		gap: 1.5em;
 		margin-bottom: 2.5em;
+		padding: 0 0.625em 0 0.625em;
 	}
 	#info-wrapper {
 		grid-template-rows: repeat(2, auto);
@@ -243,9 +244,11 @@
 		background-color: $bg-light-grey;
 		border-left: 15px solid $main-red;
 		padding: 1em;
-		// max-width: 740px;
 		margin: 0 auto;
 		margin-bottom: 4em;
+	}
+	.info-section {
+		padding: 0;
 	}
 }
 
