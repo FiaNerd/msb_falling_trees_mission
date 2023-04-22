@@ -7,13 +7,6 @@
 	margin: 0 0.625em 2em 0.625em;
 }
 
-.info-title {
-	font-family: $heading-font;
-	line-height: $line-height-title;
-	margin: 0 auto;
-	padding: 0.5em;
-}
-
 #info-grid-container {
 	display: grid;
 	grid-template-rows: repeat(2, auto);
