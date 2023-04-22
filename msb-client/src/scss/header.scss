@@ -184,9 +184,11 @@
 	.search-icon {
 		display: none;
 	}
+
 	.btn-outline-success {
 		color: $bg-dark-grey;
 		border: 2px solid $bg-light-grey;
+		background-color: $main-purple;
 		width: 6em;
 		&:hover,
 		&:active {
