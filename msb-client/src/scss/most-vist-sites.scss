@@ -1,0 +1,30 @@
+.visit-sites-title-container {
+	font-family: $heading-font;
+	background-color: $main-grey;
+	color: #fff;
+	text-align: center;
+	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+	margin: 0 0.625em 2em 0.625em;
+}
+
+.visit-wrapper {
+	display: grid;
+	grid-template-rows: repeat(2, auto);
+
+	.news-One-wrapper {
+		background-color: $bg-light-grey;
+		border-left: 15px solid $main-grey;
+		padding: 1em;
+		margin-bottom: 3em;
+		padding: 1em;
+		box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+	}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+	.visit-wrapper {
+		display: grid;
+		grid-template-columns: repeat(2, auto);
+	}
+}
