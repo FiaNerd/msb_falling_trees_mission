@@ -56,17 +56,13 @@
 	}
 
 	.navbar-toggler-icon {
-		fill: $bg-dark-grey;
+		fill: #333333;
 	}
 
 	.nav-link {
 		color: #333333;
-		// height: 4em;
-
-		&.active {
-			color: $main-purple;
-			background-color: transparent;
-		}
+		font-weight: 700;
+		font-size: 1.4rem;
 		&.hover {
 			text-decoration: underline;
 		}
@@ -139,6 +135,8 @@
 	.navbar-toggler-text {
 		font-size: 0.875rem;
 		margin-top: 1px;
+		color: #333333;
+		font-weight: 700;
 	}
 }
 
@@ -157,25 +155,21 @@
 	}
 	.navbar {
 		display: block;
+		.navbar-collapse {
+			background-color: $bg-light-grey;
+		}
 		.navbar-nav {
 			padding: 0;
 			margin: 0 auto;
 			gap: 4em;
 			text-align: center;
-			background-color: $bg-light-grey;
-			width: 100%;
+			width: 90%;
 			justify-content: space-around;
 		}
 		.nav-link {
 			margin: 0 auto;
 			max-width: 70%;
-			color: #333333;
-			font-weight: 700;
-			&:active {
-				background-color: transparent;
-				border-bottom: 2px solid $main-purple;
-				font-weight: 700;
-			}
+			font-size: 1.2rem;
 			&:hover {
 				color: $bg-dark-grey;
 				border-bottom: 4px solid $main-purple;
@@ -186,11 +180,14 @@
 		display: none;
 	}
 
-	.btn-outline-success {
+	.btn-search {
 		color: $bg-dark-grey;
 		border: 2px solid $bg-light-grey;
 		background-color: $main-purple;
-		width: 6em;
+		width: 80%;
+		color: #fff;
+		font-size: 1.3rem;
+		border-radius: 0.5em;
 		&:hover,
 		&:active {
 			border-bottom: 2px solid $main-purple;
