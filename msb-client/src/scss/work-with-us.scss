@@ -112,12 +112,14 @@
 
 .carousel-ovaraly {
 	position: absolute;
-	top: calc(100% - 5.5em);
+	font-family: $heading-font;
+	top: calc(100% - 7.6em);
 	left: 50%;
 	transform: translateX(-50%);
-	width: 95%;
+	width: 95.5%;
 	height: auto;
 	background-color: rgba(202, 164, 179, 0.8);
+	padding: 0.3em 0.6em;
 
 	// position: absolute;
 	// top: 84.5%;
@@ -205,9 +207,18 @@
 }
 
 // Small devices (landscape phones, 576px and up)
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 417px) {
 	.carousel-ovaraly {
-		top: calc(100% - 5.5em);
+		top: calc(100% - 6.1em);
+	}
+}
+// Small devices (landscape phones, 576px and up)
+@media only screen and (min-width: 576px) {
+}
+
+@media only screen and (min-width: 609px) {
+	.carousel-ovaraly {
+		top: calc(100% - 6.1em);
 	}
 }
 
