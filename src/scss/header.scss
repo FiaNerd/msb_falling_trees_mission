@@ -108,7 +108,7 @@
 		&:hover {
 			background-color: transparent;
 			border: 2px solid $main-purple;
-			color: $bg-dark-grey;
+			color: $bg-dark-grey !important;
 		}
 	}
 }
@@ -141,16 +141,15 @@
 }
 
 // Small devices (landscape phones, 576px and up)
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 36em) {
 	.navbar-container {
-		max-width: 1380px;
-		/* margin: 0 1em; */
+		max-width: 1400px;
 		padding: 0 2em;
 	}
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@media (min-width: 48em) {
 	.logo {
 		height: 5em;
 		align-items: center;
@@ -169,10 +168,6 @@
 			width: 476px;
 		}
 	}
-	// .navbar-container {
-	// 	max-width: 900px;
-	// 	margin-left: 2em;
-	// }
 	.navbar {
 		display: block;
 		max-width: 100%;
@@ -208,14 +203,14 @@
 		color: $bg-dark-grey;
 		border: 2px solid $bg-light-grey;
 		background-color: $main-purple;
-		width: 80%;
+		width: 60%;
 		color: #fff;
 		font-size: 1.3rem;
 		border-radius: 0.5em;
-		&:hover,
-		&:active {
-			border-bottom: 2px solid $main-purple;
-			color: $bg-light-grey;
+
+		&:hover {
+			background-color: $bg-dark-grey;
+			color: $bg-light-grey !important;
 		}
 	}
 	.search-container {
@@ -225,7 +220,7 @@
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@media (min-width: 62em) {
 	.navbar-expand-md {
 		position: relative;
 		.img-bg-lines {
@@ -240,16 +235,14 @@
 			width: 476px;
 		}
 	}
-	// .navbar-container {
-	// 	margin-bottom: 4em;
-	// 	max-width: 1200px;
-	// }
+	.btn-search {
+		width: 100%;
+	}
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-	// .navbar-container {
-	// 	margin: 2em 0;
-	// 	width: 100%;
-	// }
+@media (min-width: 75em) {
+	.btn-search {
+		width: 100%;
+	}
 }
