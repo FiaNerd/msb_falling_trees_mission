@@ -114,6 +114,11 @@
 	#instruction-header {
 		background-color: $main-red;
 	}
+	.modal-title {
+		font-family: $heading-font;
+		font-weight: 600;
+		font-size: 1.4rem;
+	}
 	.modal-body {
 		overflow-y: auto;
 	}

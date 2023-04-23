@@ -218,6 +218,20 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+	.navbar-expand-md {
+		position: relative;
+		.img-bg-lines {
+			background-image: url(images/artwork/bg_header_lines_.svg);
+			background-repeat: no-repeat;
+			background-position: top right;
+			height: 117px;
+			overflow: hidden;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 450px;
+		}
+	}
 }
 
 // Extra large devices (large desktops, 1200px and up)
