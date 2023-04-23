@@ -164,8 +164,17 @@
 	#society-card-section-4 {
 		grid-template-rows: repeat(2, auto);
 	}
+
+	.img-chrismas-tree {
+		max-width: 34%;
+		margin: 0 auto;
+	}
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media only screen and (min-width: 1200px) {
+	.img-chrismas-tree {
+		max-width: 30%;
+		margin: 0 auto;
+	}
 }
