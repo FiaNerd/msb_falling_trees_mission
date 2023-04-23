@@ -13,56 +13,57 @@ const slideSpanElement = Array.from(slides)
 
 
 export const updatePosition = (dotPosition?: number) => {
-
 	imgElement.map(imgs => {
-		imgs.classList.remove('visible')
-		imgs.classList.add('hidden')
+	  imgs.classList.remove('visible')
+	  imgs.classList.add('hidden')
 	})
 
+	imgs[dotPosition || imgPosition].classList.remove('hidden')
+	imgs[dotPosition || imgPosition].classList.add('visible')
 
-  imgs[imgPosition].classList.remove('hidden')
-  imgs[imgPosition].classList.add('visible')
+	dotSpanElement.map(dot => {
+	  dot.className = dot.className.replace(" active", "");
+	})
 
-  dotSpanElement.map(dot => {
-	dot.className = dot.className.replace(" active", "");
-  })
-
-
-    dots[imgPosition].classList.add('active');
+	dots[dotPosition || imgPosition].classList.add('active');
 
 	slideSpanElement.map(dot => {
-		dot.classList.remove('visible')
-		dot.classList.add('hidden')
+	  dot.classList.remove('visible')
+	  dot.classList.add('hidden')
 	})
 
-  slideSpanElement[imgPosition].classList.remove('hidden')
-  slideSpanElement[imgPosition].classList.add('visible')
-}
+	slideSpanElement[dotPosition || imgPosition].classList.remove('hidden')
+	slideSpanElement[dotPosition || imgPosition].classList.add('visible')
+  }
 
-export const nextImg = () =>{
-  if (imgPosition === totalImgs -1){
-        imgPosition = 0;
-    } else{
-        imgPosition++;
-    }
-    updatePosition();
-}
+  export const nextImg = () =>{
+	if (imgPosition === totalImgs -1){
+	  imgPosition = 0;
+	} else{
+	  imgPosition++;
+	}
+	updatePosition();
+  }
 
-export const prevImg = () => {
-  if (imgPosition === 0){
-        imgPosition = totalImgs-1;
-    } else{
-        imgPosition--;
-    }
-    updatePosition();
-}
+  export const prevImg = () => {
+	if (imgPosition === 0){
+	  imgPosition = totalImgs-1;
+	} else{
+	  imgPosition--;
+	}
+	updatePosition();
+  }
 
-dots.forEach((dot, dotPosition) => {
-  dot.addEventListener("click", () => {
-    imgPosition = dotPosition
-    updatePosition(dotPosition)
+  dots.forEach((dot, dotPosition) => {
+	dot.addEventListener("click", () => {
+	  updatePosition(dotPosition)
+	})
   })
-})
 
-next!.addEventListener('click', nextImg)
-prev!.addEventListener('click', prevImg)
+  next!.addEventListener('click', () => {
+	nextImg();
+  })
+
+  prev!.addEventListener('click', () => {
+	prevImg();
+  })
