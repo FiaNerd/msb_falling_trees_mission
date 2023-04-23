@@ -120,42 +120,41 @@
 
 // Medium devices (tablets, 768px and up)
 @media only screen and (min-width: 768px) {
-	#society-card-section {
-		grid-template-columns: 40% 50%;
+	.society-work-container {
+		grid-template-rows: repeat(4, auto);
+		gap: $gap-between-container;
+		margin-bottom: 0;
+		margin-bottom: $margin-between-container-section;
 
-		.info-image {
-			object-fit: cover;
-			height: 100%;
+		#article-card {
+			grid-template-columns: 40% 60%;
+
+			.info-image {
+				height: 100%;
+			}
 		}
 	}
 }
 
 // Large devices (desktops, 992px and up)
 @media only screen and (min-width: 992px) {
-	// TODO: LÄGG IN EN BAKGRUNDS BILD BAKOM FOMREN!! NOG MED LINJER
 	.society-work-container {
 		grid-template-columns: repeat(2, auto);
 		gap: $gap-between-container;
 		margin-bottom: 0;
+
+		#article-card {
+			grid-template-columns: inherit;
+			.info-image {
+				height: 10em;
+			}
+		}
 	}
 
 	.handle-info-wrapper {
 		background-color: $bg-light-grey;
 		border-left: 15px solid $main-red;
 		padding: 1em;
-		margin: 0 auto;
-	}
-
-	#society-card-section-1,
-	#society-card-section-2,
-	#society-card-section-3,
-	#society-card-section-4 {
-		grid-template-rows: repeat(2, auto);
-	}
-
-	.img-chrismas-tree {
-		display: block;
-		max-width: 34%;
 		margin: 0 auto;
 	}
 }
