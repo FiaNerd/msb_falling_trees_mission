@@ -136,17 +136,13 @@
 	.society-work-container {
 		grid-template-columns: repeat(2, auto);
 		gap: $gap-between-container;
+		margin-bottom: 0;
 	}
 
-	.form-report {
-		max-width: 540px;
-		margin: 0 auto 3em auto;
-	}
 	.handle-info-wrapper {
 		background-color: $bg-light-grey;
 		border-left: 15px solid $main-red;
 		padding: 1em;
-		// max-width: 740px;
 		margin: 0 auto;
 	}
 
