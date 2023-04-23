@@ -120,16 +120,6 @@
 	height: auto;
 	background-color: rgba(202, 164, 179, 0.8);
 	padding: 0.3em 0.6em;
-
-	// position: absolute;
-	// top: 84.5%;
-	// left: 0;
-	// right: 0;
-	// transform: translateY(-50%);
-	// text-align: center;
-	// background-color: rgba(202, 164, 179, 0.8);
-	// max-width: 600px;
-	// margin: 0 auto;
 }
 
 //WORK
@@ -150,7 +140,7 @@
 	color: #fff;
 	text-align: center;
 	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
-	margin-bottom: 2em;
+	margin-bottom: 3em;
 
 	.work-subtitle {
 		padding-bottom: 1em;
@@ -159,7 +149,6 @@
 }
 
 .work-with-us-wrapper {
-	// padding: 0 0.625em;
 	margin-bottom: 4em;
 }
 
@@ -241,4 +230,7 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media only screen and (min-width: 1200px) {
+	.work-container {
+		margin-bottom: 5em;
+	}
 }

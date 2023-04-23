@@ -157,9 +157,13 @@
 	background: $main-red;
 	color: #fff;
 	border: none;
+	font-size: 1.2rem;
 	&:hover {
 		background: #db4b32;
 		color: #fff;
+	}
+	.glyphicon {
+		margin-right: 2em;
 	}
 }
 .input-group-text {
