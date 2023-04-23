@@ -22,7 +22,19 @@
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@media only screen and (min-width: 768px) {
+	.visit-wrapper {
+		display: grid;
+		grid-template-columns: repeat(2, auto);
+		padding: 0 0.9375em 0 0.9375em;
+	}
+
+	.most-visit-sites {
+		padding: 0 0.9375em 0 0.9375em;
+	}
+}
+
+@media only screen and (min-width: 992px) {
 	.visit-wrapper {
 		display: grid;
 		grid-template-columns: repeat(2, auto);

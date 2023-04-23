@@ -143,10 +143,6 @@
 	width: 100%;
 }
 
-.form-control {
-	width: 100vw;
-}
-
 .form-adress {
 	margin-bottom: 2.6em;
 }
@@ -205,6 +201,12 @@
 			height: 100%;
 		}
 	}
+	.search-container {
+		z-index: 1;
+		.form-control {
+			width: 100vw;
+		}
+	}
 }
 
 // Large devices (desktops, 992px and up)
@@ -212,7 +214,7 @@
 	.bg-form {
 		background-image: url(images/artwork/bg_form.svg);
 		background-size: cover;
-		// width: 100%;
+		width: 100%;
 		background-position: center center;
 	}
 
@@ -220,7 +222,7 @@
 		grid-template-columns: 60% 37.4%;
 		gap: 1.5em;
 		margin-bottom: 2.5em;
-		padding: 0 0.625em 0 0.625em;
+		padding: 0 0.9375em 0 0.9375em;
 	}
 	#info-wrapper {
 		grid-template-rows: repeat(2, auto);

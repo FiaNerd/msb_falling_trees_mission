@@ -147,14 +147,30 @@
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
 	.logo {
-		height: 4em;
+		height: 5em;
+	}
+	.navbar-expand-md {
+		position: relative;
+		.img-bg-lines {
+			background-image: url(images/artwork/bg_header_lines_.svg);
+			background-repeat: no-repeat;
+			background-position: top right;
+			height: 143px;
+			overflow: hidden;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 450px;
+		}
 	}
 	.navbar-container {
 		margin-bottom: 1.5em;
-		width: 80%;
+		width: 100%;
 	}
 	.navbar {
 		display: block;
+		max-width: 100%;
+
 		.navbar-collapse {
 			background-color: $bg-light-grey;
 		}
