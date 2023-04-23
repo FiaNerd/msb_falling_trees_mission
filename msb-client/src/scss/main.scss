@@ -64,6 +64,17 @@ p {
 .main-boddy-container {
 	max-width: 1280px;
 	margin: 0 auto;
+	padding: 0 0.625em;
 }
 
-// TODO: KANSKE lägg in någon snygg bakgrundsbild i nabar för desktop
+@media only screen and (min-width: 414px) {
+	.main-boddy-container {
+		padding: 0 0.9375em;
+	}
+}
+
+@media only screen and (min-width: 576px) {
+	.main-boddy-container {
+		padding: 0 0.9375em;
+	}
+}

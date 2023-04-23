@@ -4,13 +4,13 @@
 	color: #fff;
 	text-align: center;
 	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
-	margin: 0 0.625em 2em 0.625em;
+	margin-bottom: $margin-between-sections;
 }
 
 .visit-wrapper {
 	display: grid;
 	grid-template-rows: repeat(2, auto);
-	gap: 1.5em;
+	gap: 3em;
 	margin-bottom: 4em;
 
 	.news-One-wrapper {
@@ -26,11 +26,6 @@
 	.visit-wrapper {
 		display: grid;
 		grid-template-columns: repeat(2, auto);
-		padding: 0 0.9375em 0 0.9375em;
-	}
-
-	.most-visit-sites {
-		padding: 0 0.9375em 0 0.9375em;
 	}
 }
 

@@ -4,13 +4,14 @@
 	color: #fff;
 	text-align: center;
 	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
-	margin: 0 0.625em 2em 0.625em;
+	margin-bottom: $margin-between-sections;
 }
 
 #info-grid-container {
 	display: grid;
 	grid-template-rows: repeat(2, auto);
-	gap: 4em;
+	gap: $gap-between-container;
+	margin-bottom: $margin-between-sections;
 }
 
 .info-title-container {
@@ -29,9 +30,9 @@
 	padding: 0.5em;
 }
 
-.info-section {
-	padding: 0 0.625em;
-}
+// .info-section {
+// 	margin-bottom: $margin-between-container-section;
+// }
 
 #info-wrapper {
 	grid-template-rows: repeat(2, auto);
@@ -81,7 +82,7 @@
 // Instruction
 .instruction-title-container {
 	flex-direction: column;
-	margin-bottom: 4rem;
+	margin-bottom: $margin-between-sections;
 	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
 
 	.text-wrapper {
@@ -131,11 +132,14 @@
 }
 
 //FORM
-.form-report {
-	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
-	padding: 0.6em;
-	background-color: $bg-light-grey;
-	margin-bottom: 3em;
+.bg-form {
+	margin-bottom: $margin-between-sections;
+
+	.form-report {
+		box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+		padding: 0.6em;
+		background-color: $bg-light-grey;
+	}
 }
 
 .form-group {
@@ -180,7 +184,10 @@
 	flex-direction: column;
 	font-family: $heading-font;
 	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
-	margin: 0 auto 4em auto;
+}
+
+#article-handle {
+	margin-bottom: $margin-between-container-section;
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -214,36 +221,22 @@
 	.bg-form {
 		background-image: url(images/artwork/bg_form.svg);
 		background-size: cover;
-		width: 100%;
+		max-width: 1280px;
 		background-position: center center;
 	}
 
 	#info-grid-container {
-		grid-template-columns: 60% 37.4%;
-		gap: 1.5em;
-		margin-bottom: 2.5em;
-		padding: 0 0.9375em 0 0.9375em;
+		grid-template-columns: 58.4% 37.4%;
 	}
-	#info-wrapper {
-		grid-template-rows: repeat(2, auto);
-	}
-	.form-report {
-		max-width: 510px;
-		margin: 0 auto 3em auto;
-		padding: 2em;
-	}
-	.handle-info-wrapper {
-		background-color: $bg-light-grey;
-		border-left: 15px solid $main-red;
-		padding: 1em;
+	.container {
 		margin: 0 auto;
-		margin-bottom: 4em;
-	}
-	.info-section {
-		padding: 0;
 	}
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media only screen and (min-width: 1200px) {
+	.bg-form {
+		max-width: 1280px;
+		background-image: url(images/artwork/bg_form_lg.svg);
+	}
 }

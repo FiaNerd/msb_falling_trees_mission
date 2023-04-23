@@ -3,11 +3,7 @@
 	display: grid;
 	grid-template-rows: repeat(4, auto);
 	gap: 3em;
-	// padding: 0 0.625em 0 0.625em;
-
-	.wrapper-falling-tree {
-		// margin-bottom: 4em;
-	}
+	margin-bottom: $margin-between-container-section;
 
 	.education-wrapper {
 		background-color: $bg-light-grey;
@@ -30,7 +26,7 @@
 	color: #fff;
 	text-align: center;
 	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
-	margin: 0 0.9375em 2em 0.9375em;
+	margin-bottom: $margin-between-sections;
 
 	.intervju-subtitle {
 		padding-bottom: 1em;
@@ -60,7 +56,7 @@
 	max-width: 400px;
 	height: 150px;
 	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
-	margin: 0 0.625em 2em 0.625em;
+	// margin: 0 0.625em 2em 0.625em;
 	cursor: pointer;
 	margin-bottom: 4em;
 }
@@ -124,9 +120,6 @@
 
 // Medium devices (tablets, 768px and up)
 @media only screen and (min-width: 768px) {
-	.society-work-container {
-		padding: 0 0.9375em 0 0.9375em;
-	}
 	#society-card-section {
 		grid-template-columns: 40% 50%;
 
@@ -142,12 +135,9 @@
 	// TODO: LÄGG IN EN BAKGRUNDS BILD BAKOM FOMREN!! NOG MED LINJER
 	.society-work-container {
 		grid-template-columns: repeat(2, auto);
-		grid-template-columns: repeat(2, auto);
-		gap: 1.5em;
+		gap: $gap-between-container;
 	}
-	#info-wrapper {
-		grid-template-rows: repeat(2, auto);
-	}
+
 	.form-report {
 		max-width: 540px;
 		margin: 0 auto 3em auto;
@@ -158,7 +148,6 @@
 		padding: 1em;
 		// max-width: 740px;
 		margin: 0 auto;
-		margin-bottom: 4em;
 	}
 
 	#society-card-section-1,
