@@ -142,12 +142,18 @@
 
 // Small devices (landscape phones, 576px and up)
 @media only screen and (min-width: 576px) {
+	.navbar-container {
+		max-width: 1380px;
+		/* margin: 0 1em; */
+		padding: 0 2em;
+	}
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
 	.logo {
 		height: 5em;
+		align-items: center;
 	}
 	.navbar-expand-md {
 		position: relative;
@@ -155,24 +161,25 @@
 			background-image: url(/images/artwork/bg_header_lines_.svg);
 			background-repeat: no-repeat;
 			background-position: top right;
-			height: 143px;
+			height: 150px;
 			overflow: hidden;
 			position: absolute;
 			right: 0;
 			top: 0;
-			width: 450px;
+			width: 476px;
 		}
 	}
-	.navbar-container {
-		margin-bottom: 1.5em;
-		width: 100%;
-	}
+	// .navbar-container {
+	// 	max-width: 900px;
+	// 	margin-left: 2em;
+	// }
 	.navbar {
 		display: block;
 		max-width: 100%;
 
 		.navbar-collapse {
 			background-color: $bg-light-grey;
+			margin-top: 1.5em;
 		}
 		.navbar-nav {
 			padding: 0;
@@ -192,6 +199,7 @@
 			}
 		}
 	}
+
 	.search-icon {
 		display: none;
 	}
@@ -221,19 +229,27 @@
 	.navbar-expand-md {
 		position: relative;
 		.img-bg-lines {
-			background-image: url("/images/artwork/bg_header_lines_.svg");
+			background-image: url(/images/artwork/bg_header_lines_.svg);
 			background-repeat: no-repeat;
 			background-position: top right;
-			height: 117px;
+			height: 144px;
 			overflow: hidden;
 			position: absolute;
 			right: 0;
 			top: 0;
-			width: 450px;
+			width: 476px;
 		}
 	}
+	// .navbar-container {
+	// 	margin-bottom: 4em;
+	// 	max-width: 1200px;
+	// }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+	// .navbar-container {
+	// 	margin: 2em 0;
+	// 	width: 100%;
+	// }
 }
