@@ -236,7 +236,7 @@
 // Large devices (desktops, 992px and up)
 @media only screen and (min-width: 992px) {
 	.bg-form {
-		background: url(/images/artwork/bg_form.svg);
+		background-image: url(/images/artwork/bg_form.svg);
 		background-size: cover;
 		max-width: 1280px;
 		background-position: center center;
@@ -258,7 +258,7 @@
 @media only screen and (min-width: 1200px) {
 	.bg-form {
 		max-width: 1280px;
-		background: url(/images/artwork/bg_form_lg.svg);
+		background-image: url(/images/artwork/bg_form_lg.svg);
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
