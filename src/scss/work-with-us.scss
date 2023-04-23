@@ -195,14 +195,14 @@
 	font-weight: 700;
 }
 
-// Small devices (landscape phones, 576px and up)
-@media only screen and (min-width: 417px) {
+// Small devices (landscape phones, 417px and up)
+@media only screen and (min-width: 26.063em) {
 	.carousel-ovaraly {
 		top: calc(100% - 6.1em);
 	}
 }
 // Small devices (landscape phones, 576px and up)
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 36em) {
 }
 
 @media only screen and (min-width: 609px) {
@@ -212,14 +212,14 @@
 }
 
 // Medium devices (tablets, 768px and up)
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 48em) {
 	.img-work-container {
 		margin-bottom: 3em;
 	}
 }
 
 // Large devices (desktops, 992px and up)
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 62em) {
 	.img-work-container {
 		display: grid;
 		grid-template-columns: 50% 45%;
@@ -229,7 +229,7 @@
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 75em) {
 	.work-container {
 		margin-bottom: 5em;
 	}
