@@ -1,0 +1,131 @@
+.img-society {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.links-container {
+	background-color: $main-purple;
+	gap: 1.5em;
+	padding: 2em;
+	flex-wrap: wrap;
+	line-height: 2.2rem;
+	justify-content: space-between;
+}
+
+footer ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+footer ul a {
+	color: #fff;
+	text-decoration: none;
+}
+
+footer ul a:hover {
+	text-decoration: underline;
+	color: #fff;
+}
+
+.footer-title {
+	color: #fff;
+	font-size: 1.125rem;
+	font-weight: 900;
+	padding: 0;
+}
+
+.contact-container {
+	position: relative;
+	background-color: $main-grey;
+	gap: 1.5em;
+	padding: 0.625em 2em 3em 2em;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	.msb-logo-footer {
+		width: 12em;
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+
+	.contact-msb {
+		color: #fff;
+		ul {
+			line-height: 2.2em;
+		}
+		a {
+			color: #fff;
+			text-decoration: none;
+		}
+		a:hover {
+			color: #fff;
+			text-decoration: underline;
+		}
+	}
+
+	.sub-title-footer {
+		font-size: 0.875rem;
+	}
+
+	.sub-text-footer {
+		margin-bottom: 1.3em;
+	}
+}
+
+.bottom-footer-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 8em;
+	background-color: $main-purple;
+	position: relative;
+}
+
+.icon-brands {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2em;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: translate(-10%, -50%);
+}
+
+.brands {
+	font-size: 1.2rem;
+	color: #fff;
+	background: $main-purple;
+	border-radius: 50%;
+	padding: 0.5em;
+}
+
+.bottom-text {
+	color: #fff;
+	font-weight: 700;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	padding: 0.5em;
+	margin: 0;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media only screen and (min-width: 576px) {
+	.brands {
+		font-size: 1.5rem;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.links-container {
+		display: grid;
+		grid-template-columns: repeat(4, auto);
+	}
+	.contact-container {
+		display: grid;
+		position: relative;
+		grid-template-columns: repeat(4, auto);
+	}
+	.contact-msb {
+		margin-top: 3em;
+	}
+}

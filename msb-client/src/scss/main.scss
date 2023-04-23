@@ -1,0 +1,80 @@
+@import "bootstrap/scss/bootstrap";
+@import "variables";
+@import "header";
+@import "hero-section";
+@import "report";
+@import "most-vist-sites";
+@import "society-work";
+@import "work-with-us";
+@import "footer";
+
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: $main-text-font;
+	font-size: $main-text-size;
+	line-height: $line-height-text;
+	font-weight: 400;
+	background-color: $bg-white;
+	width: 100%;
+	min-height: 100vh;
+	margin: 0 auto;
+	color: #333333;
+	background-color: $bg-light-grey;
+}
+
+h2 {
+	font-family: $heading-font;
+	line-height: $line-height-title;
+	font-size: $heading-size;
+	font-weight: 600;
+	padding: 0.5em;
+}
+
+.sub-text {
+	font-family: $heading-font;
+	font-style: 1.125;
+	line-height: 1.875;
+}
+
+p {
+	font-family: $main-text-font;
+	line-height: $line-height-text;
+	margin-bottom: 2rem;
+}
+
+#app {
+	background-color: #d5d5d5;
+}
+
+.main-boddy-container {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 0.625em;
+}
+
+@media only screen and (min-width: 414px) {
+	.main-boddy-container {
+		padding: 0 0.9375em;
+	}
+}
+
+@media only screen and (min-width: 576px) {
+	.main-boddy-container {
+		padding: 0 0.9375em;
+	}
+}

@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+			integrity="sha384-HDODHfwaZ1v+b8XJW6TI1zSWaBGYw5p5r5r5gCbsmyYoGx17NvHj+2XnN3i+y6Jz"
+			crossorigin="anonymous"
+		/>
+		<script
+			defer
+			src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"
+		></script>
+
+		<title>MSB farliga träd</title>
+	</head>
+	<body>
+		<div id="app">
+			<header>
+				<div class="text-scroll-container">
+					<p class="static-text">Just nu:</p>
+					<div class="scroling-news-wrappper">
+						<span class="news-text-item"
+							>Fallande träd på väg 666, Eslöv</span
+						>
+						<span class="news-text-item"
+							>Farligt träd på väg 77, Billeberga</span
+						>
+						<span class="news-text-item"
+							>Träd på vägen e6, Svalöv</span
+						>
+					</div>
+				</div>
+
+				<nav class="navbar navbar-expand-md">
+					<div class="container navbar-container">
+						<div class="navbar-brand">
+							<a href="#"
+								><img
+									src="./images/msb_logo/msb_logotyp_svensk.png"
+									alt="Logo"
+									class="logo"
+							/></a>
+						</div>
+						<div class="img-bg-lines"></div>
+						<div class="d-flex flex-row-reverse">
+							<button
+								class="navbar-toggler"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#navbarNavAltMarkup"
+								aria-controls="navbarNavAltMarkup"
+								aria-expanded="false"
+								aria-label="Toggle navigation"
+							>
+								<span class="navbar-toggler-icon line"></span>
+								<span class="navbar-toggler-icon line"></span>
+								<span class="navbar-toggler-text">Meny</span>
+							</button>
+							<button
+								class="search-icon me-3"
+								type="button"
+								data-bs-toggle="modal"
+								data-bs-target="#searchModal"
+							>
+								<i class="fa fa-search"></i>
+							</button>
+
+							<form class="search-container d-none d-md-flex">
+								<input
+									class="form-control me-2"
+									type="search"
+									placeholder="Vad söker du...?"
+									aria-label="Search"
+								/>
+								<button class="btn-search" type="submit">
+									Sök
+								</button>
+							</form>
+						</div>
+					</div>
+
+					<div
+						class="modal fade"
+						id="searchModal"
+						tabindex="-1"
+						aria-labelledby="searchModalLabel"
+						aria-hidden="true"
+					>
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5
+										class="modal-title"
+										id="searchModalLabel"
+									>
+										Sök hos MSB
+									</h5>
+									<button
+										type="button"
+										class="btn-close"
+										data-bs-dismiss="modal"
+										aria-label="Close"
+									></button>
+								</div>
+								<div class="modal-body">
+									<form class="d-flex">
+										<input
+											class="form-control me-2"
+											type="search"
+											placeholder="Sök..."
+											aria-label="Search"
+										/>
+										<button
+											class="btn-search-mobile btn-outline-success"
+											type="submit"
+										>
+											Sök
+										</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="collapse navbar-collapse"
+						id="navbarNavAltMarkup"
+					>
+						<div class="navbar-nav">
+							<a class="nav-link" aria-current="page" href="#"
+								>Hem</a
+							>
+							<a class="nav-link" href="#report-info"
+								>Anmälan & information</a
+							>
+							<a class="nav-link" href="#our-work">Vårt arbete</a>
+							<a class="nav-link" href="#most-visit-sites"
+								>Välbesökta sidor</a
+							>
+							<a class="nav-link" href="#work-with-us"
+								>Jobba hos oss</a
+							>
+						</div>
+					</div>
+				</nav>
+			</header>
+
+			<main>
+				<section id="hero-section">
+					<div class="container">
+						<div class="row p-4 justify-content-center">
+							<div
+								class="hero-text-container d-flex flex-column justify-content-center mx-auto text-center pt-2"
+							>
+								<h1>Var en hjälte och anmäl farliga träd</h1>
+								<p>
+									- förebygg katastrofer och bevara säkerheten
+								</p>
+							</div>
+
+							<a
+								href="#report-info"
+								class="btn-cta btn btn-secondary custom-link-btn"
+								tabindex="-1"
+								role="button"
+								aria-disabled="true"
+								>Gör anmälan</a
+							>
+						</div>
+					</div>
+				</section>
+
+				<div id="report-info" class="main-boddy-container">
+					<div class="title-container">
+						<h2>Anmälan och information</h2>
+					</div>
+
+					<div id="info-grid-container">
+						<section class="info-section">
+							<article id="info-wrapper" class="d-grid">
+								<img
+									class="info-image"
+									src="/images/nature/fallen_tree_firetruck.jpg"
+									alt="tree natue image"
+								/>
+								<div class="text-info-wrapper">
+									<h2>Risker och förebyggande åtgärder</h2>
+									<p class="sub-text">
+										Fallande träd kan utgöra en allvarlig
+										fara för människor, byggnader och annan
+										egendom i samhället. En stark storm
+										eller starka vindar kan orsaka träd att
+										välta eller grenar att brytas av och
+										falla. För att minimera risken för
+										fallande träd vidtas olika åtgärder av
+										myndigheterna.
+									</p>
+
+									<div
+										class="expand-content"
+										id="show-content-1"
+									>
+										<p>
+											En av de viktigaste åtgärderna är
+											att ha en regelbunden underhållsplan
+											för träd inom samhället. Detta
+											inkluderar noggrann beskärning av
+											grenar och att ta bort sjuka eller
+											skadade träd som utgör en fara för
+											allmänheten. Myndigheterna genomför
+											också inspektioner av träd längs
+											allmänna vägar och i parker för att
+											identifiera potentiella faror och
+											vidta åtgärder för att minimera
+											dessa risker.
+										</p>
+
+										<p>
+											En annan åtgärd är att ha en
+											effektiv kommunikationsplan för att
+											informera allmänheten om faror från
+											fallande träd. Myndigheterna kan
+											använda sociala medier, webbplatser,
+											skyltar och andra medier för att
+											informera allmänheten om vilka
+											områden som kan utgöra en fara och
+											vilka åtgärder som vidtas för att
+											minimera riskerna.
+										</p>
+									</div>
+
+									<div class="expand-more">
+										<span
+											class="btn-expand-more"
+											data-hideText="Läs mindre"
+											data-showText="Läs mer"
+											data-target="show-content-1"
+											>Läs mer</span
+										>
+									</div>
+								</div>
+							</article>
+						</section>
+
+						<section class="info-section">
+							<div
+								class="instruction-title-container instruction d-flex"
+							>
+								<div class="text-wrapper">
+									<h2>
+										Läs instruktionerna noga innan du fyller
+										i formuläret
+									</h2>
+
+									<p class="sub-text">
+										<strong
+											>Genom att följa dessa
+											regler</strong
+										>
+										kan du hjälpa till att säkerställa att
+										myndigheterna får all den information
+										som de behöver för att vidta lämpliga
+										åtgärder mot farliga träd eller grenar.
+										Det är viktigt att samarbeta med
+										myndigheterna.
+									</p>
+
+									<!-- Button trigger modal -->
+									<button
+										type="button"
+										class="btn-modal-instruction btn btn-primary float-end mb-2"
+										data-bs-toggle="modal"
+										data-bs-target="#instructionModal"
+									>
+										Läs mer
+									</button>
+								</div>
+							</div>
+						</section>
+
+						<!-- Modal -->
+						<div
+							class="modal-instruction modal fade mx-auto my-auto"
+							id="instructionModal"
+							tabindex="-1"
+							aria-labelledby="instructionModalLabel"
+							aria-hidden="true"
+						>
+							<div
+								class="modal-dialog modal-dialog modal-dialog-centered modal-dialog-scrollable"
+							>
+								<div class="modal-content">
+									<div
+										id="instruction-header"
+										class="modal-header"
+									>
+										<h5
+											class="modal-title"
+											id="instructionModalLabel"
+										>
+											Instruktioner för anmälan
+										</h5>
+										<button
+											type="button"
+											class="btn-close"
+											data-bs-dismiss="modal"
+											aria-label="Close"
+										></button>
+									</div>
+									<div class="modal-body">
+										<div class="modal-body text-start">
+											<article
+												class="instruction-article article-text"
+											>
+												<p>
+													<span class="strong-text"
+														>Läs igenom
+														instruktionerna
+														noggrant:
+													</span>
+													Det är viktigt att du läser
+													igenom alla instruktioner
+													som medföljer formuläret
+													noggrant innan du börjar
+													fylla i det. Detta hjälper
+													dig att förstå vilka
+													uppgifter som behövs och
+													vilka regler som gäller för
+													att fylla i formuläret
+													korrekt.
+												</p>
+											</article>
+
+											<article
+												class="instruction-article article-text"
+											>
+												<p>
+													<span class="strong-text"
+														>Var så detaljerad som
+														möjligt:</span
+													>
+													När du fyller i formuläret
+													är det viktigt att du är så
+													detaljerad som möjligt.
+													Beskriv noga var trädet
+													eller grenarna finns, hur de
+													ser ut och vad som orsakar
+													faran. Detta hjälper
+													myndigheterna att snabbt och
+													korrekt bedöma risken och
+													vidta lämpliga åtgärder.
+												</p>
+											</article>
+
+											<article
+												class="instruction-article article-text"
+											>
+												<p>
+													<span class="strong-text"
+														>Fyll i alla
+														obligatoriska fält: </span
+													>Se till att du fyller i
+													alla obligatoriska fält i
+													formuläret. Om du lämnar
+													några fält tomma kan det
+													fördröja myndigheternas
+													åtgärder och göra det
+													svårare för dem att lösa
+													problemet.
+												</p>
+											</article>
+
+											<article
+												class="instruction-article article-text"
+											>
+												<p>
+													<span class="strong-text"
+														>Använd korrekt stavning
+														och grammatik:</span
+													>
+													För att se till att din
+													anmälan förstås korrekt av
+													myndigheterna, är det
+													viktigt att du använder
+													korrekt stavning och
+													grammatik. Detta hjälper
+													också till att ge en
+													professionell intryck av din
+													anmälan.
+												</p>
+											</article>
+
+											<article
+												class="instruction-article article-text"
+											>
+												<p>
+													<span class="strong-text"
+														>Kontrollera och
+														bekräfta informationen
+														innan du skickar
+														in:</span
+													>
+													Innan du skickar in
+													formuläret, se till att du
+													har kontrollerat att all
+													information som du har
+													angivit är korrekt. Bekräfta
+													att all information är
+													aktuell och att du har fyllt
+													i alla fält som krävs.
+												</p>
+											</article>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button
+											type="button"
+											class="btn-modal-close btn btn-secondary"
+											data-bs-dismiss="modal"
+										>
+											Close
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="form-section" class="info-title-container">
+						<h2>Orosamnälan - Fallande eller farliga träd</h2>
+					</div>
+
+					<section class="container">
+						<div class="bg-form">
+							<form
+								class="form-report form-horizontal"
+								method="post"
+								id="contact_form"
+							>
+								<fieldset>
+									<!-- Form Name -->
+									<legend class="title-legend">
+										Kontaktperson
+									</legend>
+
+									<!-- Text input-->
+
+									<div class="form-group">
+										<label class="col-md-4 control-label"
+											>Förnamn</label
+										>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text"
+													><span
+														class="input-group-addon"
+														><i
+															class="icon-form fa-solid fa-user"
+														></i></span
+												></span>
+											</div>
+											<input
+												name="first_name"
+												placeholder="Förnamn"
+												class="form-control"
+												type="text"
+											/>
+										</div>
+									</div>
+
+									<!-- Text input-->
+
+									<div class="form-group">
+										<label class="col-md-4 control-label"
+											>Efternamn</label
+										>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text"
+													><i
+														class="icon-form fa-solid fa-user"
+													></i
+												></span>
+											</div>
+											<input
+												name="last_name"
+												placeholder="Efternamn"
+												class="form-control"
+												type="text"
+											/>
+										</div>
+									</div>
+
+									<!-- Text input-->
+									<div class="form-group">
+										<label class="col-md-4 control-label"
+											>E-post</label
+										>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text"
+													><i
+														class="icon-form fa-solid fa-envelope"
+													></i
+												></span>
+											</div>
+											<input
+												name="email"
+												placeholder=" E-post address"
+												class="form-control"
+												type="email"
+											/>
+										</div>
+									</div>
+
+									<!-- Text input-->
+									<div class="form-group">
+										<label class="col-md-4 control-label"
+											>Telefon nr</label
+										>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text"
+													><i
+														class="icon-form fa-solid fa-phone"
+													></i
+												></span>
+											</div>
+											<input
+												name="phone"
+												placeholder="070-3456345"
+												class="form-control"
+												type="text"
+											/>
+										</div>
+									</div>
+
+									<!-- Text input-->
+
+									<h2 class="title-legend">
+										Platsbeskrivning
+									</h2>
+
+									<!-- Text input-->
+
+									<div class="form-group form-adress">
+										<label class="col-md-4 control-label"
+											>Address</label
+										>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text"
+													><i
+														class="icon-form fa-solid fa-address-book"
+													></i
+												></span>
+											</div>
+											<input
+												name="address"
+												placeholder="Address"
+												class="form-control"
+												type="text"
+											/>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-4 control-label"
+											>Stad</label
+										>
+
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text"
+													><i
+														class="icon-form fa-solid fa-tree-city"
+													></i
+												></span>
+											</div>
+											<input
+												name="city"
+												placeholder="Stad"
+												class="form-control"
+												type="text"
+											/>
+										</div>
+									</div>
+
+									<!-- Text input-->
+									<div class="form-group">
+										<label class="col-md-4 control-label"
+											>Postnummer</label
+										>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text"
+													><i
+														class="icon-form fa-solid fa-tree-city"
+													></i
+												></span>
+											</div>
+											<input
+												name="zip"
+												placeholder="Postnummer"
+												class="form-control"
+												type="text"
+											/>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text"
+													><i
+														class="icon-form fa-solid fa-square-check"
+													></i
+												></span>
+											</div>
+
+											<select
+												name="state"
+												class="form-control selectpicker"
+											>
+												<option value=" ">
+													Välj ur listan
+												</option>
+												<option>Farligt</option>
+												<option>Skadat</option>
+												<option>På vägen</option>
+											</select>
+										</div>
+									</div>
+
+									<!-- Uppload image -->
+
+									<div class="form-group">
+										<label class="col-md-4 control-label"
+											>Ladda upp bilder</label
+										>
+										<div class="input-group">
+											<div class="input-group-upload">
+												<span class="input-group-text"
+													><i
+														class="fa-solid fa-upload"
+													></i>
+												</span>
+												<span class="input-group-text"
+													><i
+														class="fa-solid fa-image"
+													></i>
+												</span>
+
+												<span class="input-group-text"
+													><i
+														class="fa-solid fa-image"
+													></i>
+												</span>
+
+												<span class="input-group-text"
+													><i
+														class="fa-solid fa-image"
+													></i>
+												</span>
+											</div>
+										</div>
+									</div>
+
+									<!-- Text area -->
+									<div class="form-group">
+										<label class="col-md-8 control-label"
+											>Beskrivning av problemet</label
+										>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text"
+													><i
+														class="icon-form fa-solid fa-road"
+													></i
+												></span>
+											</div>
+											<textarea
+												class="form-control"
+												name="comment"
+												placeholder="Beskrivning av problemet"
+											></textarea>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-4 control-label"
+											>Övrigt</label
+										>
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text"
+													><i
+														class="icon-form fa-solid fa-feather"
+													></i
+												></span>
+											</div>
+											<textarea
+												class="form-control"
+												name="comment"
+												placeholder="Beskrivning av problemet"
+											></textarea>
+										</div>
+									</div>
+
+									<!-- Button -->
+									<div class="form-group">
+										<label
+											class="col-md-4 control-label"
+										></label>
+										<div class="btn-block">
+											<button
+												type="button"
+												class="btn btn-warning"
+											>
+												Skicka
+											</button>
+										</div>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+					</section>
+
+					<section>
+						<article id="article-handle">
+							<div class="handle-info-wrapper">
+								<h2>Hur vi hanterar din anmälan</h2>
+								<p class="sub-text">
+									När du rapporterar en oro för fallande träd
+									till myndigheterna kommer de att hantera din
+									anmälan på ett professionellt sätt för att
+									skydda allmänheten och fastigheter i
+									närheten.
+								</p>
+
+								<div class="expand-content" id="show-content-2">
+									<p>
+										Först och främst kommer myndigheterna
+										att samla in all nödvändig information
+										om det fallande trädet, såsom dess
+										placering, storlek och skick. De kommer
+										också att undersöka om det finns några
+										tidigare rapporterade incidenter som
+										involverar trädet. Efter att ha samlat
+										in all relevant information kommer
+										myndigheterna att bedöma risken som
+										trädet utgör för allmänheten och
+										fastigheter i närheten. Om trädet anses
+										utgöra en omedelbar fara kan det bli
+										nödvändigt att vidta åtgärder
+										omedelbart.
+										<br />
+										Beroende på situationen kan
+										myndigheterna vidta åtgärder för att
+										minimera risken, såsom att beskära,
+										fälla eller på annat sätt säkra trädet.
+										De kommer också att följa upp med
+										fastighetsägaren eller ansvarig för
+										trädet för att säkerställa att
+										åtgärderna vidtas.
+									</p>
+								</div>
+
+								<div class="expand-more">
+									<span
+										class="btn-expand-more"
+										data-hideText="Läs mindre"
+										data-showText="Läs mer"
+										data-target="show-content-2"
+										>Läs mer</span
+									>
+								</div>
+							</div>
+						</article>
+					</section>
+
+					<div id="our-work" class="our-work-title-container">
+						<h2>Vårt arbete i sammhället</h2>
+					</div>
+
+					<div class="society-work-container">
+						<section class="society-card-section">
+							<article
+								id="article-card-1"
+								class="article-info-wrapper d-grid"
+							>
+								<img
+									class="info-image"
+									src="/images/nature/tree.jpg"
+									alt="tree nature image"
+								/>
+								<div class="our-work-wrapper">
+									<h2>Trädinspektioner</h2>
+									<p class="sub-text">
+										Trädinspektioner är en viktig del av
+										myndigheternas arbete för att
+										säkerställa allmänhetens säkerhet och
+										välbefinnande. Inspektionerna utförs av
+										kvalificerade arborister eller
+										trädexperter och syftar till att
+										identifiera potentiella faror eller
+										problem med träd.
+									</p>
+
+									<div
+										class="expand-content"
+										id="show-content-3"
+									>
+										<p>
+											Inspektionen börjar vanligtvis med
+											en visuell undersökning av trädet
+											från marknivå. Inspektören letar
+											efter tecken på sjukdom, skada eller
+											andra problem som kan påverka
+											trädet. De kommer också att
+											undersöka trädets omgivning och
+											identifiera eventuella potentiella
+											risker som kan orsakas av trädets
+											placering eller tillväxt. Om det
+											finns misstankar om att trädet kan
+											vara farligt kan inspektören använda
+											specialverktyg och tekniker för att
+											undersöka trädet noggrannare.
+										</p>
+
+										<p>
+											Till exempel kan inspektören använda
+											en så kallad "sounding hammer" för
+											att undersöka trädstammen och avgöra
+											om det finns några ihåliga områden
+											eller andra tecken på förruttnelse.
+										</p>
+
+										<p>
+											Efter att inspektionen är klar
+											kommer inspektören att sammanställa
+											en rapport som innehåller
+											information om trädet och dess
+											tillstånd. Rapporten kan innehålla
+											rekommendationer för åtgärder som
+											behöver vidtas för att säkerställa
+											trädets hälsa och säkerhet, såsom
+											beskärning eller fällning av trädet
+											om det utgör en fara.
+										</p>
+									</div>
+
+									<div class="expand-more">
+										<span
+											class="btn-expand-more"
+											data-hideText="Läs mindre"
+											data-showText="Läs mer"
+											data-target="show-content-3"
+											>Läs mer</span
+										>
+									</div>
+								</div>
+							</article>
+						</section>
+
+						<section class="info-section">
+							<article
+								id="article-card-2"
+								class="article-info-wrapper wrapper-falling-tree d-grid"
+							>
+								<img
+									class="info-image"
+									src="/images/nature/fog-forest.jpg"
+									alt="foreset nature image"
+								/>
+								<div class="our-work-wrapper">
+									<h2>
+										Fallande träd och klimatförändringar
+									</h2>
+									<p class="sub-text">
+										Fallande träd är ett allvarligt problem
+										som kanuppstå som en följd
+										avklimatförändringar. Myndigheter runt
+										om i världen arbetar aktivt föratt
+										minska risken för fallande träd genom
+										attgenomföra inspektioner och
+										beskärningar av träd på offentlig mark.
+										Känns till risker.
+									</p>
+
+									<div
+										class="expand-content"
+										id="show-content-5"
+									>
+										<p>
+											Det är också viktigt att allmänheten
+											är medveten om risken för fallande
+											träd och taransvar för att
+											underhålla och beskära trädpå sin
+											egen mark. Tillsammans kan vi
+											bidratill att minimera risken för
+											fallande träd och skapa en säkrare
+											och mer hälsosam miljö för alla.
+										</p>
+									</div>
+
+									<div class="expand-more">
+										<span
+											class="btn-expand-more"
+											data-hideText="Läs mindre"
+											data-showText="Läs mer"
+											data-target="show-content-5"
+											>Läs mer</span
+										>
+									</div>
+								</div>
+							</article>
+						</section>
+
+						<section class="society-card-section">
+							<article
+								id="article-card-3"
+								class="article-info-wrapper"
+							>
+								<div class="education-wrapper">
+									<h2>
+										Trädfällning och utbildning: Hur man kan
+										utbilda och informera allmänheten om
+										trädfällning och dess risker.
+									</h2>
+									<p class="sub-text">
+										Trädfällning är en komplex uppgift som
+										kräver noggrann planering, korrekt
+										utrustning och skickliga yrkesmän. För
+										att minimera riskerna och säkerställa
+										att trädfällning utförs på ett säkert
+										och effektivt sätt, är det viktigt att
+										allmänheten är medveten om riskerna och
+										förstår vikten av att anlita
+										professionella trädfällare.
+									</p>
+									<div class="arrow-container">
+										<i
+											class="icon-arrow fa-solid fa-arrow-right"
+										></i>
+									</div>
+								</div>
+							</article>
+						</section>
+
+						<section class="society-card-section">
+							<article
+								id="article-card-4"
+								class="article-info-wrapper"
+							>
+								<div class="our-work-wrapper">
+									<h2>Underhåll av träd</h2>
+									<p class="sub-text">
+										Myndigheten för samhällsskydd och
+										beredskap (MSB) ansvarar för att
+										säkerställa en säker och hälsosam miljö
+										för allmänheten. En del av detta ansvar
+										innebär att se till att träd på allmän
+										mark och offentliga platser hålls i gott
+										skick. MSB regelbundet genomföra
+										inspektioner av träd på allmän mark.
+									</p>
+
+									<div class="img-chrismas-tree">
+										<img
+											src="/images/artwork/christmas_tree.svg"
+											alt="christmas trees"
+										/>
+									</div>
+									<div class="arrow-container">
+										<i
+											class="icon-arrow fa-solid fa-arrow-right"
+										></i>
+									</div>
+								</div>
+							</article>
+						</section>
+					</div>
+
+					<div
+						id="most-visit-sites"
+						class="visit-sites-title-container"
+					>
+						<h2>Mest välbesökta sidor</h2>
+					</div>
+					<div class="visit-wrapper">
+						<section class="info-section">
+							<article class="info-wrapper">
+								<div class="news-One-wrapper">
+									<h2>Kriget i Ukraina</h2>
+									<p class="sub-text">
+										En aktivering av civilplikten innebär
+										att vi i Sverige får bättre möjlighet
+										att planera och förstärka
+										personalförsörjningen inom specifika
+										verksamheter. På det sättet säkerställs
+										att rätt person finns på rätt plats i
+										totalförsvaret.
+									</p>
+									<div class="arrow-container">
+										<i
+											class="icon-arrow-news fa-solid fa-arrow-right"
+										></i>
+									</div>
+								</div>
+							</article>
+						</section>
+
+						<section class="info-section">
+							<article class="info-wrapper">
+								<div class="news-One-wrapper">
+									<h2>Inför aktivering av civilplikten</h2>
+									<p class="sub-text">
+										En aktivering av civilplikten innebär
+										att vi i Sverige får bättre möjlighet
+										att planera och förstärka
+										personalförsörjningen inom specifika
+										verksamheter. P& det sättet säkerställs
+										att rätt person finns pa rätt plats i
+										totalförsvaret.
+									</p>
+									<div class="arrow-container">
+										<i
+											class="icon-arrow-news fa-solid fa-arrow-right"
+										></i>
+									</div>
+								</div>
+							</article>
+						</section>
+					</div>
+
+					<div class="img-work-container">
+						<div class="intervju-grid-wrapper">
+							<div class="our-work-title-container">
+								<h2>I skuggan av träden:</h2>
+								<p class="intervju-subtitle">
+									Intervju med människor
+								</p>
+							</div>
+
+							<section class="carousel-container">
+								<div class="carousel-imgs">
+									<div class="carousel-img-container">
+										<img
+											class="carousel-img visible"
+											src="/images/people/fireman.jpg"
+											alt="fireman image"
+										/>
+									</div>
+									<div class="carousel-img-container">
+										<img
+											class="carousel-img hidden"
+											src="/images/people/man_volunteer.jpg"
+											alt="volunteer image"
+										/>
+									</div>
+
+									<div class="carousel-img-container">
+										<img
+											class="carousel-img hidden"
+											src="/images/people/woman.jpg"
+											alt="woman image"
+										/>
+									</div>
+								</div>
+
+								<a class="prev arrow">&#10094;</a>
+								<a class="next arrow">&#10095;</a>
+								<p class="carousel-ovaraly visible">
+									"<strong
+										>Från brandstationen till
+										katastrofområden:</strong
+									>
+									En brandmans roll i samhället"
+								</p>
+								<p class="carousel-ovaraly hidden">
+									"<strong
+										>När samhället behöver det som
+										mest:</strong
+									>
+									Det finns inget bättre än hjälpa andra, en
+									instas för samhället"
+								</p>
+								<p class="carousel-ovaraly hidden">
+									"<strong
+										>När faran knackar på dörren:</strong
+									>
+									En berättelse om att rädda huset från en
+									katastrof"
+								</p>
+								<div class="slide-numbers">
+									<span class="dot active"></span>
+									<span class="dot"></span>
+									<span class="dot"></span>
+								</div>
+							</section>
+						</div>
+
+						<div id="work-with-us" class="work-with-us-wrapper">
+							<div class="work-title-container">
+								<h2>Jobba hos oss: <br /></h2>
+								<p class="work-subtitle">förändra världen</p>
+							</div>
+							<figure class="work-container">
+								<img
+									class="work-image"
+									src="./images/work/work_with_us.jpg"
+									alt="background image"
+								/>
+								<figcaption class="text-work-image">
+									Jobba hos oss
+								</figcaption>
+							</figure>
+
+							<figure class="work-container">
+								<img
+									class="work-image"
+									src="./images/work/volunteers.jpg"
+									alt="background"
+								/>
+								<figcaption class="text-volunteer-image">
+									Ansök som volontär
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</main>
+
+			<footer class="footer-container">
+				<img
+					class="img-society"
+					src="./images/artwork/society.svg"
+					alt="artwork society"
+				/>
+
+				<section class="links-container">
+					<div class="about-msb">
+						<h2 class="footer-title">Om MSB</h2>
+						<ul>
+							<li><a href="#">Nyhetsbrev</a></li>
+							<li><a href="#">Vårt uppdrag</a></li>
+							<li><a href="#">Jobba hos oss</a></li>
+							<li><a href="#">Om webbplatsen</a></li>
+							<li>
+								<a href="#">Tillgänglighetsredogörelse</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="visits-pages">
+						<h2 class="footer-title">Välbesökta sidor</h2>
+						<ul>
+							<li><a href="#">Kriget i Ukraina</a></li>
+							<li><a href="#">Skyddsrumskarta</a></li>
+							<li>
+								<a href="#"
+									>Broschyren Om krisen eller kriget kommer</a
+								>
+							</li>
+							<li><a href="#">Totalförsvarsplikt</a></li>
+						</ul>
+					</div>
+
+					<div class="our-services">
+						<h2 class="footer-title">Våra tjänster</h2>
+						<ul>
+							<li><a href="#">Fortbildningstjänsten</a></li>
+							<li><a href="#">Rakel</a></li>
+							<li>
+								<a href="#">Statistik</a>
+							</li>
+							<li>
+								<a href="#"
+									>RIB - beslutsstöd till räddningstjänst</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="other-sites">
+						<h2 class="footer-title">Våra andra webbplatser</h2>
+						<ul>
+							<li><a href="#">CERT-SE</a></li>
+							<li><a href="#">Informationssäkerhet.se </a></li>
+							<li>
+								<a href="#">Krisinformation.se </a>
+							</li>
+							<li>
+								<a href="#">Tjugofyra7 </a>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section class="contact-container">
+					<a href="#">
+						<img
+							class="msb-logo-footer"
+							src="./images/msb_logo/msb_logotyp_svensk.png"
+							alt="msb logotype"
+						/>
+					</a>
+					<div class="contact-msb">
+						<h2 class="footer-title">Kontakta MSB</h2>
+
+						<h4 class="sub-title-footer">Telefonnummer</h4>
+						<p class="sub-text-footer">0771-240 240</p>
+						<h4 class="sub-title-footer">E-post</h4>
+						<a href="mailto:registrator@msb.se..."
+							>registrator@msb.se</a
+						>
+					</div>
+
+					<div class="contact-msb">
+						<h3 class="sub-title-footer">Postadress</h3>
+						<p class="sub-text-footer">651 81 Karlstad</p>
+						<h4 class="sub-title-footer">Organisationsnummer</h4>
+						<p class="sub-text-footer">202100-5984</p>
+					</div>
+
+					<div class="contact-msb">
+						<h2 class="footer-title">Andra kontaktvägar</h2>
+						<ul>
+							<li><a href="#">Press</a></li>
+							<li>
+								<a href="#">Besöksadresser och öppettider</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section class="bottom-footer-container">
+					<div class="icon-brands">
+						<i class="brands fa-brands fa-facebook-f"></i>
+						<i class="brands fa-brands fa-instagram"></i>
+						<i class="brands fa-brands fa-linkedin-in"></i>
+						<i class="brands fa-brands fa-twitter"></i>
+						<i class="brands fa-brands fa-youtube"></i>
+					</div>
+
+					<p class="bottom-text">
+						Ett säkrare samhälle i en föränderlig värld
+					</p>
+				</section>
+			</footer>
+		</div>
+		<script type="module" src="/src/main.ts"></script>
+	</body>
+</html>
