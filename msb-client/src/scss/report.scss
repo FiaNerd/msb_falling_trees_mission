@@ -12,6 +12,7 @@
 	grid-template-rows: repeat(2, auto);
 	gap: $gap-between-container;
 	margin-bottom: $margin-between-sections;
+	width: 100%;
 }
 
 .info-title-container {
@@ -29,10 +30,6 @@
 	margin: 0 auto;
 	padding: 0.5em;
 }
-
-// .info-section {
-// 	margin-bottom: $margin-between-container-section;
-// }
 
 #info-wrapper {
 	grid-template-rows: repeat(2, auto);
@@ -170,7 +167,6 @@
 	text-align: center;
 	margin-top: 1em;
 }
-
 .input-group-upload {
 	display: grid;
 	grid-template-columns: repeat(4, auto);
@@ -198,6 +194,17 @@
 		.btn-modal-instruction {
 			width: 15em;
 		}
+	}
+
+	.title-legend {
+		font-weight: 700;
+		text-align: center;
+		margin-top: 1em;
+		font-family: $heading-font;
+	}
+	.control-label {
+		font-family: $heading-font;
+		font-weight: 700;
 	}
 }
 
@@ -228,7 +235,7 @@
 	}
 
 	#info-grid-container {
-		grid-template-columns: 58.4% 37.4%;
+		grid-template-columns: 58% 37%;
 	}
 	.container {
 		margin: 0 auto;
@@ -244,5 +251,10 @@
 	.bg-form {
 		max-width: 1280px;
 		background-image: url(images/artwork/bg_form_lg.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	#info-grid-container {
+		grid-template-columns: 58.4% 37.4%;
 	}
 }
