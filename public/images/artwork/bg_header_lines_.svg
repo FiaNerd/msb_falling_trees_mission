@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Lager_1" data-name="Lager 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.46 164.71">
+<svg id="Lager_1" data-name="Lager 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.46 230.1">
   <defs>
     <style>
       .cls-1 {
@@ -25,8 +25,8 @@
       }
     </style>
   </defs>
-  <path class="cls-2" d="m208.35-14.22s40.87,193.43,401.03,164.01"/>
-  <path class="cls-4" d="m221.42-10.41s168.91,134.04,391.77,101.89"/>
-  <path class="cls-3" d="m6.74-10.41S296.62,239.69,619.39,4.39"/>
-  <path class="cls-1" d="m221.42-10.41s181.99,137.31,391.77,101.89"/>
+  <path class="cls-2" d="m190.26-6.51s1.09,257.73,420.64,216.32"/>
+  <path class="cls-4" d="m188.08-10.32s169.46,211.41,428.82,138.94"/>
+  <path class="cls-3" d="m6.74-10.41S292.69,277.37,619.39,4.39"/>
+  <path class="cls-1" d="m188.08-10.32s171.64,211.41,428.82,138.94"/>
 </svg>

@@ -130,13 +130,19 @@
 }
 
 //FORM
-.bg-form {
-	margin-bottom: $margin-between-sections;
+.container {
+	padding: 0;
+	.bg-form {
+		margin-bottom: $margin-between-sections;
+		.form-container {
+			padding: 0;
+		}
 
-	.form-report {
-		box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
-		padding: 0.6em;
-		background-color: $bg-light-grey;
+		.form-report {
+			box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+			padding: 0.6em;
+			background-color: $bg-light-grey;
+		}
 	}
 }
 
