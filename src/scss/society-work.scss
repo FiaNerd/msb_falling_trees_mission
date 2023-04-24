@@ -42,12 +42,18 @@
 	font-size: 2.6em;
 	color: $main-purple;
 	cursor: pointer;
+	&:hover {
+		color: #9a4c6f;
+	}
 }
 
 .icon-arrow-news {
 	font-size: 2.6em;
 	color: $main-grey;
 	cursor: pointer;
+	&:hover {
+		color: #908f88;
+	}
 }
 
 .work-container {
